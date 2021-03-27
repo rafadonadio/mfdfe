@@ -1,0 +1,7 @@
+Razon Social: MFD SOLUTIONS
+CUIT: 30-70857028-8
+
+Certificado digital: MFDsolutions.crt
+Pass: diego
+DN Origen: serialNumber=CUIT 30708570288, CN=servermulti, O=Gravida SRL, ST=Buenos Aires, C=AR
+DN Destino: cn=wsaahomo, o=afip, c=ar, serialNumber=CUIT 33693450239

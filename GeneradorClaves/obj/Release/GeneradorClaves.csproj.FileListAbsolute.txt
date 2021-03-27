@@ -1,0 +1,8 @@
+C:\Vero\Proyectos\MFD\MFDHOMO\GeneradorClaves\bin\Release\GeneradorClaves.exe
+C:\Vero\Proyectos\MFD\MFDHOMO\GeneradorClaves\bin\Release\GeneradorClaves.pdb
+C:\Vero\Proyectos\MFD\MFDHOMO\GeneradorClaves\obj\Release\ResolveAssemblyReference.cache
+C:\Vero\Proyectos\MFD\MFDHOMO\GeneradorClaves\obj\Release\GeneradorClaves.Form1.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\GeneradorClaves\obj\Release\GeneradorClaves.Properties.Resources.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\GeneradorClaves\obj\Release\GeneradorClaves.csproj.GenerateResource.Cache
+C:\Vero\Proyectos\MFD\MFDHOMO\GeneradorClaves\obj\Release\GeneradorClaves.exe
+C:\Vero\Proyectos\MFD\MFDHOMO\GeneradorClaves\obj\Release\GeneradorClaves.pdb

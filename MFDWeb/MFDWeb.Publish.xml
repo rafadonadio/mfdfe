@@ -1,0 +1,31 @@
+<publishData>
+  <publishTarget publishUrl="C:\Vero\Proyectos\MFD\MFDHOMO\MFDWeb\Publish\">
+    <file relUrl="bin/log4net.dll" publishTime="03/30/2006 15:24:28" />
+    <file relUrl="bin/Iesi.Collections.pdb" publishTime="11/10/2006 15:08:58" />
+    <file relUrl="bin/MFDWebService.pdb" publishTime="02/10/2009 11:32:46" />
+    <file relUrl="bin/Castle.DynamicProxy.dll" publishTime="11/01/2006 11:21:18" />
+    <file relUrl="MFDWebService.asmx" publishTime="02/10/2009 10:42:14" />
+    <file relUrl="bin/Janus.Windows.GridEX.v2.xml" publishTime="10/11/2004 15:01:56" />
+    <file relUrl="Web.config" publishTime="02/10/2009 10:22:03" />
+    <file relUrl="bin/Iesi.Collections.xml" publishTime="11/10/2006 15:08:58" />
+    <file relUrl="bin/DataBusinessModel.dll" publishTime="02/10/2009 09:06:44" />
+    <file relUrl="bin/Janus.Windows.Common.v2.dll" publishTime="10/11/2004 15:03:56" />
+    <file relUrl="bin/MFDWebService.XmlSerializers.dll" publishTime="02/10/2009 11:32:47" />
+    <file relUrl="bin/BusinessLogic.pdb" publishTime="02/10/2009 09:06:52" />
+    <file relUrl="bin/NHibernate.xml" publishTime="11/10/2006 15:09:04" />
+    <file relUrl="bin/CRUDModel.dll" publishTime="02/10/2009 09:06:50" />
+    <file relUrl="bin/BusinessLogic.dll" publishTime="02/10/2009 09:06:52" />
+    <file relUrl="bin/NHibernate.dll" publishTime="11/10/2006 15:09:04" />
+    <file relUrl="bin/Entities.dll" publishTime="02/10/2009 09:06:51" />
+    <file relUrl="bin/Janus.Windows.GridEX.v2.dll" publishTime="10/11/2004 15:05:02" />
+    <file relUrl="bin/WindowsFormsControls.dll" publishTime="02/10/2009 09:06:47" />
+    <file relUrl="bin/NHibernate.pdb" publishTime="11/10/2006 15:09:04" />
+    <file relUrl="bin/Entities.pdb" publishTime="02/10/2009 09:06:51" />
+    <file relUrl="bin/Tools.pdb" publishTime="08/03/2007 15:03:54" />
+    <file relUrl="bin/MFDWebService.dll" publishTime="02/10/2009 11:32:46" />
+    <file relUrl="bin/log4net.xml" publishTime="03/30/2006 15:24:28" />
+    <file relUrl="bin/Castle.DynamicProxy.xml" publishTime="11/02/2006 15:41:26" />
+    <file relUrl="bin/Tools.dll" publishTime="08/03/2007 15:03:54" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="11/10/2006 15:08:58" />
+  </publishTarget>
+</publishData>

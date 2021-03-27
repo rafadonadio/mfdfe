@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Entities.LoginTicketRequests, Entities" table="strg_loginticketrequests">
+    <id name="Id" type="Int32" unsaved-value="0">
+      <column name="id_loginticketrequest" not-null="true" unique="true" />
+      <generator class="native" />
+    </id>
+    <many-to-one name="Empresa" class="Entities.Empresas, Entities" column="id_empresa" access="nosetter.camelcase"/>
+    <property name="GenerationTime" column="generationTime" type="DateTime" access="nosetter.camelcase"/>
+    <property name="ExpirationTime" column="expirationTime" type="DateTime" access="nosetter.camelcase"/>
+  </class>
+</hibernate-mapping>

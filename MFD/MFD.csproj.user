@@ -1,0 +1,17 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+    <PublishUrlHistory>ftp://ftp.mfdsolutions.com.ar/public_ftp_/Releases/|ftp://ftp.mfdsolutions.com.ar/domains/mfdsolutions.com.ar/public_ftp/Releases/|ftp://ftp.mfdsolutions.com.ar/domains/mfdsolutions.com.ar/public_ftp/domains/mfdsolutions.com.ar/public_ftp/Releases/|http://localhost/MFD/</PublishUrlHistory>
+    <InstallUrlHistory>http://localhost/MFD/</InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <FallbackCulture>es-ES</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+    <ReferencePath>G:\Archivos de programa\CrystalReports\Common\3.5\managed\dotnet2</ReferencePath>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

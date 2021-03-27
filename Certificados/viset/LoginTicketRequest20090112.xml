@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loginTicketRequest version="1.0">
+  <header>
+    <source>serialNumber=CUIT 33677894259,emailAddress=viset@mfdsolutions.com.ar,CN=VISET,OU=VISET,O=VISET,ST=Buenos Aires,C=AR</source>
+    <destination>CN=wsaahomo; O=afip; C=ar; serialNumber=CUIT 33693450239</destination>
+    <uniqueId>4325399</uniqueId>
+	<generationTime>2009-01-12T15:41:36.548-02:00</generationTime>
+	<expirationTime>2009-01-12T15:51:36.548-02:00</expirationTime>
+  </header>
+  <service>wsfe</service>
+</loginTicketRequest>

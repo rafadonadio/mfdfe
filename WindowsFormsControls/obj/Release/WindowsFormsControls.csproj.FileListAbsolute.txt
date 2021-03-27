@@ -1,0 +1,13 @@
+C:\Vero\Proyectos\MFD\MFDHOMO\Libraries\UI\WinForms\WindowsFormsControls.dll
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\ResolveAssemblyReference.cache
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\FrameWork.CRUDModel.Windows.UI.DataCombo.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\WindowsFormsControls.FormMultiSelectList.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\WindowsFormsControls.MultiSelectList.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\WindowsFormsControls.Calculator.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\WindowsFormsControls.NumericControl.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\WindowsFormsControls.Properties.Resources.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\Sb.Windows.Forms.StylesSheet.StylesSheetManager.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\WindowsFormsControls.StylesSheetManager.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\WindowsFormsControls.TimeBox.resources
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\WindowsFormsControls.csproj.GenerateResource.Cache
+C:\Vero\Proyectos\MFD\MFDHOMO\WindowsFormsControls\obj\Release\WindowsFormsControls.dll

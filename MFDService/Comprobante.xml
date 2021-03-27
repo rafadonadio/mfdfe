@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<comprobante>
+  <tipo>01</tipo>
+  <idComprobante>9998</idComprobante>
+  <numeroComprobante>0001-00000190</numeroComprobante>
+  <emision>19/01/2009</emision>
+  <cuitCliente>30-54405202-7</cuitCliente>
+  <subtotalNeto>100</subtotalNeto>
+  <iva1>21</iva1>
+  <iva2>0</iva2>
+  <total>121</total>
+</comprobante>

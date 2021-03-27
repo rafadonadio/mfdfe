@@ -1,0 +1,90 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 164 (0xa4)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: CN=AFIP-Autoridad Certificante Homologacion, C=AR, ST=Capital Federal, L=Ciudad Autonoma de Buenos Aires, O=Administracion Federal de Ingresos Publicos, OU=Subdireccion General de Sistemas y Telecomunicaciones/emailAddress=ac_homo@afip.gov.ar/serialNumber=CUIT 33693450239
+        Validity
+            Not Before: Jan 28 19:02:18 2008 GMT
+            Not After : Jul 26 19:02:18 2008 GMT
+        Subject: C=AR, ST=Buenos Aires, O=MADEDU, OU=MADEDU, CN=MADEDU/emailAddress=madedu@mfdsolutions.com.ar/serialNumber=CUIT 30708808489
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:c5:e2:a8:ac:f7:3d:47:da:c0:b4:b5:d9:e6:44:
+                    00:3b:24:9c:19:b2:0a:82:2b:04:33:d5:3b:72:e9:
+                    d3:b1:db:8e:ff:29:ab:8b:0e:6e:d1:55:db:3f:3d:
+                    d6:56:2c:a9:24:d5:39:81:92:3a:c0:aa:a7:84:7b:
+                    92:70:6f:d4:d4:1d:a6:eb:c2:04:c0:f6:92:fc:aa:
+                    ea:67:03:83:f5:ae:18:a3:65:08:88:b3:8a:a3:fb:
+                    da:79:93:67:ac:19:43:ba:65:3e:fe:53:92:17:e4:
+                    18:43:46:15:85:54:cf:3e:38:e5:15:c1:4a:c6:91:
+                    ee:10:ed:a1:6e:bc:b6:e3:3b
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                71:92:EB:96:F1:8E:9B:35:47:0F:E9:99:70:6B:68:AD:97:FF:EC:58
+            X509v3 Authority Key Identifier: 
+                keyid:58:45:6B:C4:97:16:BC:E9:87:D5:55:FC:85:EB:D2:F4:98:BA:B0:C8
+                DirName:/CN=AFIP-Autoridad Certificante Homologacion/C=AR/ST=Capital Federal/L=Ciudad Autonoma de Buenos Aires/O=Administracion Federal de Ingresos Publicos/OU=Subdireccion General de Sistemas y Telecomunicaciones/emailAddress=ac_homo@afip.gov.ar
+                serial:C9:03:D1:EF:E9:E3:FE:7A
+
+            X509v3 Key Usage: 
+                Digital Signature, Non Repudiation, Key Encipherment
+            Netscape Comment: 
+                Certificado de computador para pruebas de WebServices
+            Netscape Cert Type: 
+                Object Signing
+    Signature Algorithm: sha1WithRSAEncryption
+        4b:c0:7e:8f:22:cb:c1:2d:a1:66:50:b9:67:8f:f8:a4:c6:a9:
+        f2:35:b7:50:ac:f9:93:13:55:ca:e5:c1:e8:51:34:da:00:9d:
+        c6:6a:7b:a9:66:dd:40:8c:81:b4:d8:49:27:5a:55:75:0d:a4:
+        f7:e9:ce:6b:f2:64:7d:61:73:a1:96:17:e7:d9:8f:5a:5d:3d:
+        31:e2:53:79:e3:38:d0:01:42:be:9d:c1:e7:c9:40:9a:6e:b4:
+        cb:4c:a4:06:6c:0f:ab:21:92:93:c1:e2:c7:cd:ad:93:42:9f:
+        0b:9f:42:db:ed:0e:6c:08:1c:14:62:32:fc:a8:71:49:2d:ed:
+        6e:d1:97:1a:00:a5:48:f6:ae:d4:a9:d2:2d:c5:0f:41:bc:a0:
+        37:8d:7d:48:60:9c:4a:40:1c:18:d4:d9:9c:f0:c4:43:eb:47:
+        55:a6:c9:04:18:9e:fc:7f:3a:ee:5a:82:f0:c9:84:4d:81:76:
+        65:3c:d5:e1:a7:9d:32:d0:66:fb:b1:eb:ca:b4:2e:8e:70:40:
+        e4:00:da:57:eb:65:d0:15:fa:58:9f:d7:5f:02:2c:af:b6:e4:
+        68:6a:ff:8e:22:e3:9c:20:11:13:67:ca:e1:32:ac:91:8f:47:
+        f9:97:8e:44:5f:37:88:ae:a8:61:b2:1f:25:45:04:4b:e4:bf:
+        36:24:59:0b
+-----BEGIN CERTIFICATE-----
+MIIF3jCCBMagAwIBAgICAKQwDQYJKoZIhvcNAQEFBQAwggE5MTEwLwYDVQQDEyhB
+RklQLUF1dG9yaWRhZCBDZXJ0aWZpY2FudGUgSG9tb2xvZ2FjaW9uMQswCQYDVQQG
+EwJBUjEYMBYGA1UECBMPQ2FwaXRhbCBGZWRlcmFsMSgwJgYDVQQHEx9DaXVkYWQg
+QXV0b25vbWEgZGUgQnVlbm9zIEFpcmVzMTQwMgYDVQQKEytBZG1pbmlzdHJhY2lv
+biBGZWRlcmFsIGRlIEluZ3Jlc29zIFB1YmxpY29zMT4wPAYDVQQLEzVTdWJkaXJl
+Y2Npb24gR2VuZXJhbCBkZSBTaXN0ZW1hcyB5IFRlbGVjb211bmljYWNpb25lczEi
+MCAGCSqGSIb3DQEJARYTYWNfaG9tb0BhZmlwLmdvdi5hcjEZMBcGA1UEBRMQQ1VJ
+VCAzMzY5MzQ1MDIzOTAeFw0wODAxMjgxOTAyMThaFw0wODA3MjYxOTAyMThaMIGd
+MQswCQYDVQQGEwJBUjEVMBMGA1UECBMMQnVlbm9zIEFpcmVzMQ8wDQYDVQQKEwZN
+QURFRFUxDzANBgNVBAsTBk1BREVEVTEPMA0GA1UEAxMGTUFERURVMSkwJwYJKoZI
+hvcNAQkBFhptYWRlZHVAbWZkc29sdXRpb25zLmNvbS5hcjEZMBcGA1UEBRMQQ1VJ
+VCAzMDcwODgwODQ4OTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxeKorPc9
+R9rAtLXZ5kQAOyScGbIKgisEM9U7cunTsduO/ymriw5u0VXbPz3WViypJNU5gZI6
+wKqnhHuScG/U1B2m68IEwPaS/KrqZwOD9a4Yo2UIiLOKo/vaeZNnrBlDumU+/lOS
+F+QYQ0YVhVTPPjjlFcFKxpHuEO2hbry24zsCAwEAAaOCAgswggIHMAkGA1UdEwQC
+MAAwHQYDVR0OBBYEFHGS65bxjps1Rw/pmXBraK2X/+xYMIIBcwYDVR0jBIIBajCC
+AWaAFFhFa8SXFrzph9VV/IXr0vSYurDIoYIBQaSCAT0wggE5MTEwLwYDVQQDEyhB
+RklQLUF1dG9yaWRhZCBDZXJ0aWZpY2FudGUgSG9tb2xvZ2FjaW9uMQswCQYDVQQG
+EwJBUjEYMBYGA1UECBMPQ2FwaXRhbCBGZWRlcmFsMSgwJgYDVQQHEx9DaXVkYWQg
+QXV0b25vbWEgZGUgQnVlbm9zIEFpcmVzMTQwMgYDVQQKEytBZG1pbmlzdHJhY2lv
+biBGZWRlcmFsIGRlIEluZ3Jlc29zIFB1YmxpY29zMT4wPAYDVQQLEzVTdWJkaXJl
+Y2Npb24gR2VuZXJhbCBkZSBTaXN0ZW1hcyB5IFRlbGVjb211bmljYWNpb25lczEi
+MCAGCSqGSIb3DQEJARYTYWNfaG9tb0BhZmlwLmdvdi5hcjEZMBcGA1UEBRMQQ1VJ
+VCAzMzY5MzQ1MDIzOYIJAMkD0e/p4/56MAsGA1UdDwQEAwIF4DBEBglghkgBhvhC
+AQ0ENxY1Q2VydGlmaWNhZG8gZGUgY29tcHV0YWRvciBwYXJhIHBydWViYXMgZGUg
+V2ViU2VydmljZXMwEQYJYIZIAYb4QgEBBAQDAgQQMA0GCSqGSIb3DQEBBQUAA4IB
+AQBLwH6PIsvBLaFmULlnj/ikxqnyNbdQrPmTE1XK5cHoUTTaAJ3GanupZt1AjIG0
+2EknWlV1DaT36c5r8mR9YXOhlhfn2Y9aXT0x4lN54zjQAUK+ncHnyUCabrTLTKQG
+bA+rIZKTweLHza2TQp8Ln0Lb7Q5sCBwUYjL8qHFJLe1u0ZcaAKVI9q7UqdItxQ9B
+vKA3jX1IYJxKQBwY1Nmc8MRD60dVpskEGJ78fzruWoLwyYRNgXZlPNXhp50y0Gb7
+sevKtC6OcEDkANpX62XQFfpYn9dfAiyvtuRoav+OIuOcIBETZ8rhMqyRj0f5l45E
+XzeIrqhhsh8lRQRL5L82JFkL
+-----END CERTIFICATE-----

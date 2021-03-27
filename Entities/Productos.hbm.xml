@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Entities.Productos, Entities" table="strg_tproducto">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="id_producto" not-null="true" unique="true" />
+			<generator class="native" />
+		</id>
+		<property name="Identificacion" column="identificacion" type="String(50)"/>
+		<property name="Nombre" column="nombre" type="String(50)"/>
+		<property name="Impmc" column="impmc" type="Double"/>
+		<many-to-one name="UserUpd" class="Entities.Usuarios, Entities" lazy="false">
+			<column name="user_upd" sql-type="Int32" not-null="false"/>
+		</many-to-one>
+		<many-to-one name="TipoIva" class="Entities.Ivas, Entities" lazy="false">
+			<column name="id_iva" sql-type="Int32" not-null="false"/>
+		</many-to-one>
+		<many-to-one name="Clase" class="Entities.Clases, Entities" lazy="false">
+			<column name="id_clase" sql-type="Int32" not-null="false"/>
+		</many-to-one>
+		<many-to-one name="Rubro" class="Entities.Rubros, Entities" lazy="false">
+			<column name="id_rubro" sql-type="Int32" not-null="false"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>   

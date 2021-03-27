@@ -1,0 +1,305 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66B0A9E4-14A0-4619-9F69-B77E9F8B41BA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CRUDModel</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CRUDModel</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Janus.Windows.Common.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\UI\WinForms\Janus.Windows.Common.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\UI\WinForms\Janus.Windows.GridEX.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CRUDAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AbstractCRUDController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\CRUDChildController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\CRUDController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\CRUDControllerManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\CRUDOnlineController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\ICRUDSecurityManager.cs" />
+    <Compile Include="Windows\CRUDSelController.cs" />
+    <Compile Include="Windows\ICRUDChildControllerManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Security\Actions.cs" />
+    <Compile Include="Windows\Security\CRUDFunctions.cs" />
+    <Compile Include="Windows\Security\Functions.cs" />
+    <Compile Include="Windows\Security\Modules.cs" />
+    <Compile Include="Windows\Security\Permissions.cs" />
+    <Compile Include="Windows\Security\SpecialFunctions.cs" />
+    <Compile Include="Windows\Security\UsersGroups.cs" />
+    <Compile Include="Windows\UI\CRUDChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\CRUDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\FormLayoutManager.cs" />
+    <Compile Include="Windows\UI\FormUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridAggregateToolbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridColumnsToolbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridCRUDControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridCRUDControlAux.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridCRUDControlAux.Designer.cs">
+      <DependentUpon>GridCRUDControlAux.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridFilterToolbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridFindToolbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridFreezeColumnsToolbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridLayoutKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridLayoutManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridOnLineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridOrderToolbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\GridUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\IGridControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\IGridForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\IGridLayoutKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\Grid\IGridLayoutManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\ICRUDForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\UI\IFormLayoutManager.cs" />
+    <Compile Include="Windows\UI\Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\CRUDChildForm.resx">
+      <DependentUpon>CRUDChildForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\CRUDForm.resx">
+      <DependentUpon>CRUDForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridAggregateToolbox.resx">
+      <DependentUpon>GridAggregateToolbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridColumnsToolbox.resx">
+      <DependentUpon>GridColumnsToolbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridCRUDControl.resx">
+      <DependentUpon>GridCRUDControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridCRUDControlAux.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridCRUDControlAux.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridFilterForm.resx">
+      <DependentUpon>GridFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridFilterToolbox.resx">
+      <DependentUpon>GridFilterToolbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridFindToolbox.resx">
+      <DependentUpon>GridFindToolbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridForm.resx">
+      <DependentUpon>GridForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridFreezeColumnsToolbox.resx">
+      <DependentUpon>GridFreezeColumnsToolbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridOnLineForm.resx">
+      <DependentUpon>GridOnLineForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\UI\Grid\GridOrderToolbox.resx">
+      <DependentUpon>GridOrderToolbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBusinessModel\DataBusinessModel.csproj">
+      <Project>{6AC830C6-09AE-4C7C-83EF-0FDA80E6AC9B}</Project>
+      <Name>DataBusinessModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsFormsControls\WindowsFormsControls.csproj">
+      <Project>{94990CD2-C08F-484D-B8DB-8279F2909A56}</Project>
+      <Name>WindowsFormsControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Windows\Security\Permissions.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Windows\Security\UsersGroups.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

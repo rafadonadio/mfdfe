@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Security.UsersGroups, CRUDModel" table="frw_usersgroups">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="id_usergroup" not-null="true" unique="true" />
+			<generator class="native" />
+		</id>
+		<property name="Name" column="name" type="String"/>
+		<bag name="PermissionsList" table="frw_permissions" cascade="all-delete-orphan" inverse="true" lazy="false">
+			<key column="id_usergroup"/>
+			<one-to-many class="Security.Permissions, CRUDModel" />
+		</bag>
+	</class>
+</hibernate-mapping>

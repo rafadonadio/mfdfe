@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Entities.Comprobantes, Entities" table="strg_tcbante">
+	<id name="Id" type="Int32" unsaved-value="0">
+	  <column name="id_cbante" not-null="true" unique="true" />
+	  <generator class="native" />
+	</id>
+	<property name="Supertipo" column="Supertipo" type="Int32"/>
+
+	<bag name="Items" table="strg_tcbantedet" cascade="all-delete-orphan" inverse="true" lazy="false">
+	  <key column="id_cbante"/>
+	  <one-to-many class="Entities.DetallesComprobantes, Entities" />
+	</bag>
+	<many-to-one name="Tipo" class="Entities.TiposComprobantes, Entities" lazy="false">
+	  <column name="id_tipocbante" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<many-to-one name="Cliente" class="Entities.Clientes, Entities" lazy="false">
+	  <column name="id_cliente" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<many-to-one name="Empresa" class="Entities.Empresas, Entities" lazy="false">
+	  <column name="id_empresa" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<many-to-one name="TipoPago" class="Entities.TiposPago, Entities" lazy="false">
+	  <column name="id_tipopago" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<property name="Emision" column="Emision" type="DateTime"/>
+	<property name="NroCbante" column="NroCbante" type="String"/>
+	<property name="Estado" column="Estado" type="String"/>
+	<property name="NombreCliente" column="NombreCliente" type="String"/>
+	<property name="CUITCliente" column="CUITCliente" type="String"/>
+	<many-to-one name="TipoCliente" class="Entities.TiposContribuyentes, Entities" lazy="false">
+	  <column name="id_tipocontrib" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<property name="Observaciones" column="Observaciones" type="StringClob"/>
+	<property name="Percepciones" column="Percepciones" type="Double"/>
+	<property name="Descuento" column="Descuento" type="Double"/>
+	<property name="SubtotalNeto" column="SubtotalNeto" type="Double"/>
+	<property name="SubtotalAImp" column="SubtotalAImp" type="Double"/>
+	<property name="Iva1" column="Iva1" type="Double"/>
+	<property name="Iva2" column="Iva2" type="Double"/>
+	<property name="Subtotal" column="Subtotal" type="Double"/>
+	<property name="Total" column="Total" type="Double"/>
+	<many-to-one name="UserUpd" class="Entities.Usuarios, Entities" lazy="false">
+	  <column name="user_upd" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<property name="CAE" column="CAE" type="String"/>
+	<property name="Anulacion" column="Anulacion" type="DateTime" not-null="false"/>
+	<property name="IdCabeceraWS" column="IdCabeceraWS" type="Int64" not-null="false"/>
+	<property name="Pagado" column="pagado" type="Boolean"/>
+	<property name="IdRepeticion" column="id_repeticion" type="Int64"/>
+	<property name="TieneRepeticion" column="tiene_repeticion" type="Boolean"/>
+  </class>
+  <sql-query name="FacturacionMensual">
+	<return-scalar column="Cliente" type="String"/>
+	<return-scalar column="Facturacion" type="Double"/>
+	<return-scalar column="Periodo" type="String"/>
+	<return-scalar column="Anio" type="String"/>
+	SELECT Cliente.Nombre as Cliente,
+	SUM(CASE supertipo WHEN :NOTACREDITO THEN -Comp.total ELSE Comp.total END) AS Facturacion,
+	MONTH(Comp.emision) AS Periodo, YEAR(Comp.emision) AS Anio
+	FROM strg_tcbante AS Comp INNER JOIN strg_tcliente AS Cliente ON Comp.id_cliente = Cliente.id_cliente
+	WHERE (Comp.emision BETWEEN :FECHADESDE AND :FECHAHASTA) AND (Comp.estado = :ESTADO)
+	GROUP BY Cliente.Nombre, MONTH(Comp.emision), YEAR(Comp.emision) ORDER BY Periodo
+  </sql-query>
+  <sql-query name="FacturacionTrimestral">
+	<return-scalar column="Cliente" type="String"/>
+	<return-scalar column="Facturacion" type="Double"/>
+	<return-scalar column="Periodo" type="String"/>
+	<return-scalar column="Anio" type="String"/>
+	SELECT Cliente.Nombre as Cliente,
+	SUM(CASE supertipo WHEN :NOTACREDITO THEN -Comp.total ELSE Comp.total END) AS Facturacion,
+	abs(abs(month(Comp.Emision)-1)/3+1) AS Periodo, YEAR(Comp.emision) AS Anio
+	FROM strg_tcbante AS Comp INNER JOIN strg_tcliente AS Cliente ON Comp.id_cliente = Cliente.id_cliente
+	WHERE (Comp.emision BETWEEN :FECHADESDE AND :FECHAHASTA) AND (Comp.estado = :ESTADO)
+	GROUP BY Cliente.Nombre, abs(abs(month(Comp.Emision)-1)/3+1), YEAR(Comp.emision) ORDER BY Periodo
+  </sql-query>
+  <sql-query name="FacturacionSemestral">
+	<return-scalar column="Cliente" type="String"/>
+	<return-scalar column="Facturacion" type="Double"/>
+	<return-scalar column="Periodo" type="String"/>
+	<return-scalar column="Anio" type="String"/>
+	SELECT Cliente.Nombre as Cliente,
+	SUM(CASE supertipo WHEN :NOTACREDITO THEN -Comp.total ELSE Comp.total END) AS Facturacion,
+	abs(abs(month(Comp.Emision)-1)/6+1) AS Periodo, YEAR(Comp.emision) AS Anio
+	FROM strg_tcbante AS Comp INNER JOIN strg_tcliente AS Cliente ON Comp.id_cliente = Cliente.id_cliente
+	WHERE (Comp.emision BETWEEN :FECHADESDE AND :FECHAHASTA) AND (Comp.estado = :ESTADO)
+	GROUP BY Cliente.Nombre, abs(abs(month(Comp.Emision)-1)/6+1), YEAR(Comp.emision) ORDER BY Periodo
+  </sql-query>
+  <sql-query name="VentasUsuarioMensual">
+	<return-scalar column="Vendedor" type="String"/>
+	<return-scalar column="Facturacion" type="Double"/>
+	<return-scalar column="Periodo" type="String"/>
+	<return-scalar column="Anio" type="String"/>
+	SELECT Usuario.nombre as Vendedor,
+	SUM(CASE supertipo WHEN :NOTACREDITO THEN -Comp.total ELSE Comp.total END) AS Facturacion,
+	MONTH(Comp.emision) AS Periodo, YEAR(Comp.emision) AS Anio
+	FROM strg_tcbante AS Comp INNER JOIN frw_usuarios AS Usuario ON Comp.user_upd = Usuario.id
+	WHERE (Comp.emision BETWEEN :FECHADESDE AND :FECHAHASTA) AND (Comp.estado = :ESTADO)
+	GROUP BY Usuario.nombre, MONTH(Comp.emision), YEAR(Comp.emision) ORDER BY Periodo
+  </sql-query>
+  <sql-query name="VentasUsuarioTrimestral">
+	<return-scalar column="Vendedor" type="String"/>
+	<return-scalar column="Facturacion" type="Double"/>
+	<return-scalar column="Periodo" type="String"/>
+	<return-scalar column="Anio" type="String"/>
+	SELECT Usuario.nombre as Vendedor,
+	SUM(CASE supertipo WHEN :NOTACREDITO THEN -Comp.total ELSE Comp.total END) AS Facturacion,
+	abs(abs(month(Comp.Emision)-1)/3+1) AS Periodo, YEAR(Comp.emision) AS Anio
+	FROM strg_tcbante AS Comp INNER JOIN frw_usuarios AS Usuario ON Comp.user_upd = Usuario.id
+	WHERE (Comp.emision BETWEEN :FECHADESDE AND :FECHAHASTA) AND (Comp.estado = :ESTADO)
+	GROUP BY Usuario.nombre, abs(abs(month(Comp.Emision)-1)/3+1), YEAR(Comp.emision) ORDER BY Periodo
+  </sql-query>
+  <sql-query name="VentasUsuarioSemestral">
+	<return-scalar column="Vendedor" type="String"/>
+	<return-scalar column="Facturacion" type="Double"/>
+	<return-scalar column="Periodo" type="String"/>
+	<return-scalar column="Anio" type="String"/>
+	SELECT Usuario.nombre as Vendedor,
+	SUM(CASE supertipo WHEN :NOTACREDITO THEN -Comp.total ELSE Comp.total END) AS Facturacion,
+	abs(abs(month(Comp.Emision)-1)/6+1) AS Periodo, YEAR(Comp.emision) AS Anio
+	FROM strg_tcbante AS Comp INNER JOIN frw_usuarios AS Usuario ON Comp.user_upd = Usuario.id
+	WHERE (Comp.emision BETWEEN :FECHADESDE AND :FECHAHASTA) AND (Comp.estado = :ESTADO)
+	GROUP BY Usuario.nombre, abs(abs(month(Comp.Emision)-1)/6+1), YEAR(Comp.emision) ORDER BY Periodo
+  </sql-query>
+
+</hibernate-mapping>

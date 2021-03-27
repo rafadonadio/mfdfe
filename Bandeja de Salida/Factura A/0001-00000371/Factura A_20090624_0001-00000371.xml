@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="Factura_v1.22.xsl"?>
+<comprobante xmlns="" xmlns:tns="http://www.cace.org.ar/facturaelectronica/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cabecera>
+    <informacion_comprobante>
+      <tipo_de_comprobante>01</tipo_de_comprobante>
+      <numero_comprobante>00000371</numero_comprobante>
+      <punto_de_venta>0001</punto_de_venta>
+      <fecha_emision>2009-06-24</fecha_emision>
+      <iva_computable>S</iva_computable>
+      <codigo_operacion>codigo_operacion1</codigo_operacion>
+      <cae>59259518602861</cae>
+      <fecha_vencimiento_cae>2009-07-04</fecha_vencimiento_cae>
+      <fecha_obtencion_cae>2009-06-24</fecha_obtencion_cae>
+      <resultado>
+      </resultado>
+      <es_detalle_encriptado>N</es_detalle_encriptado>
+    </informacion_comprobante>
+    <informacion_vendedor>
+      <razon_social>MFD SOLUTIONS en HOMOLOGACION</razon_social>
+      <cuit>33677894259</cuit>
+      <condicion_IVA>01</condicion_IVA>
+      <condicion_ingresos_brutos>1</condicion_ingresos_brutos>
+      <nro_ingresos_brutos>6161616</nro_ingresos_brutos>
+      <inicio_de_actividades>2008-02-01</inicio_de_actividades>
+      <contacto>
+      </contacto>
+      <domicilio_calle>Riobamba 273 P4 "7"</domicilio_calle>
+      <domicilio_numero>
+      </domicilio_numero>
+      <domicilio_depto>
+      </domicilio_depto>
+      <domicilio_sector>
+      </domicilio_sector>
+      <domicilio_torre>
+      </domicilio_torre>
+      <domicilio_manzana>
+      </domicilio_manzana>
+      <localidad>CABA</localidad>
+      <provincia>Buenos Aires</provincia>
+      <cp>CA1024BE</cp>
+      <email>info@mfdsolutions.com.ar</email>
+      <telefono>+(5411) 4590-2266</telefono>
+    </informacion_vendedor>
+    <informacion_comprador>
+      <codigo_interno>codigo_interno1</codigo_interno>
+      <codigo_doc_identificatorio>80</codigo_doc_identificatorio>
+      <nro_doc_identificatorio>30544052027</nro_doc_identificatorio>
+      <denominacion>GATA S.A.</denominacion>
+      <condicion_IVA>01</condicion_IVA>
+      <domicilio_calle>Peron 1314</domicilio_calle>
+      <domicilio_numero>
+      </domicilio_numero>
+      <domicilio_depto>
+      </domicilio_depto>
+      <domicilio_sector>
+      </domicilio_sector>
+      <domicilio_torre>
+      </domicilio_torre>
+      <domicilio_manzana>
+      </domicilio_manzana>
+      <localidad>CABA</localidad>
+      <provincia>Buenos Aires</provincia>
+      <cp>1038</cp>
+      <email>veromassera@yahoo.com</email>
+      <telefono>43838610</telefono>
+    </informacion_comprador>
+  </cabecera>
+  <detalle>
+    <comentarios>
+    </comentarios>
+  </detalle>
+  <resumen>
+    <importe_total_neto_gravado>0.00</importe_total_neto_gravado>
+    <importe_total_concepto_no_gravado>0</importe_total_concepto_no_gravado>
+    <importe_operaciones_exentas>0</importe_operaciones_exentas>
+    <impuesto_liq>0.00</impuesto_liq>
+    <impuesto_liq_rni>0</impuesto_liq_rni>
+    <importe_total_impuestos_nacionales>0</importe_total_impuestos_nacionales>
+    <importe_total_ingresos_brutos>0</importe_total_ingresos_brutos>
+    <importe_total_impuestos_municipales>0</importe_total_impuestos_municipales>
+    <importe_total_impuestos_internos>0</importe_total_impuestos_internos>
+    <importe_total_factura>0.00</importe_total_factura>
+    <codigo_moneda>PES</codigo_moneda>
+    <cant_alicuotas_iva>1</cant_alicuotas_iva>
+    <importes_moneda_origen>
+      <importe_total_neto_gravado>0</importe_total_neto_gravado>
+      <importe_total_concepto_no_gravado>0</importe_total_concepto_no_gravado>
+      <importe_operaciones_exentas>0</importe_operaciones_exentas>
+      <impuesto_liq>0</impuesto_liq>
+      <impuesto_liq_rni>0</impuesto_liq_rni>
+      <importe_total_impuestos_nacionales>0</importe_total_impuestos_nacionales>
+      <importe_total_ingresos_brutos>0</importe_total_ingresos_brutos>
+      <importe_total_impuestos_municipales>0</importe_total_impuestos_municipales>
+      <importe_total_impuestos_internos>0</importe_total_impuestos_internos>
+      <importe_total_factura>0</importe_total_factura>
+    </importes_moneda_origen>
+  </resumen>
+  <extensiones>
+    <extensiones_camara_facturas>
+      <clave_de_vinculacion>clave_de_vinculacion1</clave_de_vinculacion>
+      <id_template>id_template1</id_template>
+    </extensiones_camara_facturas>
+    <extensiones_datos_comerciales>anyType</extensiones_datos_comerciales>
+    <extensiones_datos_marketing>extensiones_datos_marketing1<logo xmlns="">C:\Vero\Proyectos\MFD\Download\Logo3.jpg</logo><url xmlns="">http://www.mfdsolutions.com.ar</url></extensiones_datos_marketing>
+    <extensiones_signatures>extensiones_signatures1</extensiones_signatures>
+  </extensiones>
+</comprobante>

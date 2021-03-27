@@ -1,0 +1,670 @@
+﻿<HTML>
+    <script>
+        ie4up=false;
+        var agt = navigator.userAgent.toLowerCase();
+        var major = parseInt(navigator.appVersion);
+        if ((agt.indexOf('msie') != -1) && (major >= 4))
+            ie4up = true;
+    </script>
+    <script language="javascript">
+        <!--
+        function doGraphDrilldown_(event, name, brch, offsetX, offsetY, pageNumber, nextpart) {
+        if (ie4up)
+            alert('name=' + name + '&brch=' + brch + '&coord=' + (event.offsetX*15 / 1
++parseInt(offsetX)) + '-' + (event.offsetY*15 / 1 +parseInt(offsetY)) +
+'&pagenumber=' + pageNumber + '&nextpart=' + nextpart)
+        else
+            alert('name=' + name + '&brch=' + brch + '&coord=' + (event.layerX*15 / 1
++parseInt(offsetX)) + '-'  + (event.layerY*15 / 1 +parseInt(offsetY)) +
+'&pagenumber=' + pageNumber + '&nextpart=' + nextpart)
+        }
+        // -->
+    </script>
+    <script language="javascript">
+        <!--
+        function ScrollToCrystalHighLighted() {
+            var highlighted = document.getElementById('CrystalHighLighted');
+            if(highlighted != null)
+            {
+                var offsetTop = highlighted.offsetTop;
+                var offsetLeft = highlighted.offsetLeft;
+                var myOffsetParent = highlighted.offsetParent;
+                while( myOffsetParent )
+                {
+                    offsetTop += myOffsetParent.offsetTop;
+                    offsetLeft += myOffsetParent.offsetLeft; 
+			        myOffsetParent = myOffsetParent.offsetParent;
+                }
+                window.scrollTo( offsetLeft, offsetTop);
+            }
+        }
+        // -->
+    </script>
+<style>
+    div.crystalstyle div {position:absolute; z-index:25}
+    div.crystalstyle a {text-decoration:none}
+    div.crystalstyle a img {border-style:none; border-width:0}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0 {font-size:10pt;color:#000000;font-family:Arial;font-weight:bold;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-1 {font-size:10pt;color:#000000;font-family:Arial;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2 {font-size:9pt;color:#000000;font-family:Arial;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-3 {font-size:11pt;color:#000000;font-family:Arial;font-weight:bold;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4 {font-size:9pt;color:#333333;font-family:Arial;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-5 {font-size:9pt;color:#333333;font-family:Arial;font-weight:bold;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-6 {font-size:13pt;color:#000000;font-family:Arial;font-weight:bold;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7 {font-size:8pt;color:#000000;font-family:Times New Roman;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-8 {font-size:13pt;color:#FF0000;font-family:Kitchener;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-9 {font-size:8pt;color:#000000;font-family:Arial;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-10 {font-size:10pt;color:#000000;font-family:Borg 9;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-11 {font-size:9pt;color:#000000;font-family:Borg 9;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-12 {font-size:8pt;color:#000000;font-family:Bookman Old Style;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13 {font-size:8pt;color:#000000;font-family:Book Antiqua;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14 {font-size:7pt;color:#000000;font-family:Book Antiqua;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-15 {font-size:7pt;color:#000000;font-family:Bookman Old Style;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16 {font-size:8pt;color:#000080;font-family:Arial;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-17 {font-size:5pt;color:#333333;font-family:Arial;font-weight:bold;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-18 {font-size:11pt;color:#FF0000;font-family:Arial;font-weight:bold;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-19 {font-size:13pt;color:#000000;font-family:Arial;font-weight:normal;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-20 {font-size:10pt;color:#333333;font-family:Arial;font-weight:bold;}
+	.fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-21 {font-size:9pt;color:#000000;font-family:Arial;font-weight:bold;}
+	.add5066dfd-027f-4c61-b9d4-b4abd81e4502-0 {border-color:#000000;border-left-width:0;border-right-width:0;border-top-width:0;border-bottom-width:0;}
+	.add5066dfd-027f-4c61-b9d4-b4abd81e4502-1 {border-color:#FF0000;border-left-width:0;border-right-width:0;border-top-width:0;border-bottom-width:0;}
+</style>
+<TITLE>Crystal Report Viewer</TITLE>
+<BODY BGCOLOR="FFFFFF" LEFTMARGIN=31 TOPMARGIN=31>
+<Div class="crystalstyle" style="position:absolute; top:31px; left:31px; ">
+<div id="Box5" style="z-index:10;top:7px;left:1px;width:783px;height:1017px;border-color:#000000;border-style:solid;border-width:1px;">
+    <table width="775px" height="1009px">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div style="z-index:10;top:332px;left:752px;width:4px;height:29px;background-color:#000000;layer-background-color:#000000;clip:rect(0px,4px,29px,0px);">
+
+</div><div style="z-index:10;top:357px;left:28px;width:728px;height:4px;background-color:#000000;layer-background-color:#000000;clip:rect(0px,728px,4px,0px);overflow:hidden;">
+
+</div><div id="Box1" style="z-index:10;top:328px;left:24px;width:728px;height:29px;border-color:#000000;border-style:solid;border-width:1px;background-color:#C0C0C0;layer-background-color:#C0C0C0;">
+    <table width="720px" height="21px">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div id="Box4" style="z-index:10;top:176px;left:24px;width:728px;height:140px;border-color:#000000;border-style:solid;border-width:1px;">
+    <table width="720px" height="132px">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div style="z-index:10;top:812px;left:758px;width:4px;height:176px;background-color:#000000;layer-background-color:#000000;clip:rect(0px,4px,176px,0px);">
+
+</div><div style="z-index:10;top:984px;left:556px;width:206px;height:4px;background-color:#000000;layer-background-color:#000000;clip:rect(0px,206px,4px,0px);overflow:hidden;">
+
+</div><div id="Box2" style="z-index:10;top:808px;left:552px;width:206px;height:176px;border-color:#000000;border-style:solid;border-width:1px;">
+    <table width="200px" height="170px">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div id="Box3" style="z-index:10;top:808px;left:24px;width:518px;height:176px;border-color:#000000;border-style:solid;border-width:1px;">
+    <table width="510px" height="168px">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div id="Section1" style="z-index:3;clip:rect(0px,788px,24px,0px);top:0px;left:0px;width:788px;height:24px;">
+
+</div>
+<div id="Section2" style="z-index:3;clip:rect(0px,788px,351px,0px);top:24px;left:0px;width:788px;height:351px;">
+
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:192px;left:248px;width:464px;height:15px;">
+    <table width="464px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">GATA&nbsp;S.A.</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:264px;left:336px;width:133px;height:15px;">
+    <table width="133px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-1">30-54405202-7</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:264px;left:96px;width:192px;height:15px;">
+    <table width="192px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">Inscripto</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:288px;left:208px;width:144px;height:15px;">
+    <table width="144px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">Cuenta&nbsp;Corriente</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:64px;left:664px;width:104px;height:15px;">
+    <table width="104px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">24/07/2008</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:40px;left:648px;width:128px;height:16px;">
+    <table width="128px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-3">0001-00000131</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:336px;left:48px;width:59px;height:15px;">
+    <table width="59px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">Cant&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">.&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:336px;left:272px;width:133px;height:15px;">
+    <table width="133px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">Descripci&#243;n&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:336px;left:576px;width:82px;height:15px;">
+    <table width="82px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">Unitario&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:336px;left:664px;width:79px;height:15px;">
+    <table width="79px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">Total&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:192px;left:40px;width:208px;height:15px;">
+    <table width="208px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">Nombre&nbsp;y&nbsp;Apellido&nbsp;o&nbsp;Raz&#243;n&nbsp;Social&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:264px;left:40px;width:56px;height:15px;">
+    <table width="56px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">I&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">.&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">V&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">.&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">A&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">.:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:264px;left:288px;width:40px;height:15px;">
+    <table width="40px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">CUIT&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:288px;left:40px;width:168px;height:15px;">
+    <table width="168px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">Condiciones&nbsp;de&nbsp;Venta&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:64px;left:24px;width:96px;height:88px;">
+    <img src="images/Factura%20A_20080724_0001-00000131_3b9afb77-c3c0-4fbe-a393-62d6878beaa6.png" alt="Image" border="0" width="96px" height="88px" />
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:64px;left:600px;width:48px;height:15px;">
+    <table width="48px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">Fecha&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:216px;left:40px;width:640px;height:48px;">
+    <table width="640px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">Domicilio&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">:&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-5">Peron&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-5">13145&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">/&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">Localidad&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">:&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-5">CABA&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table><table width="640px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">Provincia&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">:&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-5">Buenos&nbsp;Aires&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">/&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">Pa&#237;s&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">:&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-5">Argentina&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table><table width="640px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">Tel&#233;fono&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-4">:&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-5">4383&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-5">-&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-5">8610&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:24px;left:304px;width:184px;height:24px;text-align:center;">
+    <table width="184px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-6">Factura&nbsp;A</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:104px;left:520px;width:224px;height:48px;">
+    <table width="224px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="right" style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">CUIT&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">:&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">33&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">-&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">67789425&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">-&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">920&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">-&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">28863677&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">-&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">0&nbsp;&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table><table width="224px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="right" style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">IIBB&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">:&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">616161&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">-&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">6&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table><table width="224px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="right" style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">INICIO&nbsp;DE&nbsp;ACTIVIDADES&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">:&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">01&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">/&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">02&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">/&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-7">2007&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:40px;left:600px;width:40px;height:15px;">
+    <table width="40px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">Nro&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">.:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:64px;left:136px;width:304px;height:80px;">
+    <table width="304px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-8">MFD&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-9">&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-10">SOLUTIONS&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-11">&nbsp;&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table><table width="304px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-12">de&nbsp;Rafae&nbsp;J&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-12">.&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-12">L&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-12">.&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-12">Donad&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-9">&#237;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-12">o&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table><table width="304px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">Tel&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">:&nbsp;(&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">5411&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">)&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">4590&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">-&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">2266&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">Fax&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">:&nbsp;(&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">5411&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">)&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">4590&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">-&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-13">2201&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table><table width="304px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">Riobamba&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">273&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">P&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">4&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">Of&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">.&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">7&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">-&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">C&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">.&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">A&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">.&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">B&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">.&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">A&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">.(&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">C&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">1025&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">ABE&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-14">)&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-15">&nbsp;&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr><tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">info&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">@&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">mfdsolutions&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">.&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">com&nbsp;&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">-&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">www&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">.&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">mfdsolutions&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">.&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">com&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">.&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-16">ar&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:144px;left:136px;width:208px;height:15px;">
+    <table width="208px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">IVA&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">-&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">RESPONSABLE&nbsp;INCRIPTO&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div id="Section3" style="z-index:3;clip:rect(0px,788px,23px,0px);top:375px;left:0px;width:788px;height:23px;">
+
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:375px;left:48px;width:59px;height:15px;text-align:center;">
+    <table width="59px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">&nbsp;1</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:375px;left:126px;width:451px;height:15px;">
+    <table width="451px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">MFD&nbsp;-&nbsp;Facturas&nbsp;electronicas&nbsp;PL-1</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:375px;left:584px;width:74px;height:15px;text-align:center;">
+    <table width="74px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">&nbsp;180.00</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:375px;left:664px;width:79px;height:15px;text-align:center;">
+    <table width="79px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">&nbsp;180.00</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div id="Section4" style="z-index:3;clip:rect(0px,788px,120px,0px);top:398px;left:0px;width:788px;height:120px;">
+
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-1" style="top:398px;left:152px;width:492px;height:15px;">
+    <table width="492px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-18">FACTURA&nbsp;RALIZADA&nbsp;CON&nbsp;WEB&nbsp;SERVICE&nbsp;DE&nbsp;HOMOLOGACI&#211;N&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div id="Section5" style="z-index:3;clip:rect(0px,788px,229px,0px);top:800px;left:0px;width:788px;height:229px;">
+
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:824px;left:664px;width:80px;height:15px;text-align:right;">
+    <table width="80px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="right"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">&nbsp;180.00</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:856px;left:664px;width:80px;height:15px;text-align:right;">
+    <table width="80px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="right"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">&nbsp;37.80</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:880px;left:664px;width:80px;height:15px;text-align:right;">
+    <table width="80px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="right"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">&nbsp;0.00</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:944px;left:640px;width:107px;height:22px;text-align:right;">
+    <table width="107px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="right"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-19">&nbsp;217.80</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:904px;left:664px;width:80px;height:15px;text-align:right;">
+    <table width="80px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="right"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">&nbsp;0.00</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:824px;left:568px;width:96px;height:15px;">
+    <table width="96px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">Subtotal&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:856px;left:568px;width:96px;height:15px;">
+    <table width="96px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">IVA&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">21&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">%:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:880px;left:568px;width:96px;height:15px;">
+    <table width="96px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">IVA&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">10&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">,&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">5&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">%:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:904px;left:568px;width:96px;height:15px;">
+    <table width="96px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">Percepci&#243;n&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:944px;left:568px;width:72px;height:24px;">
+    <table width="72px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-6">TOTAL&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-6">:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:816px;left:48px;width:125px;height:15px;">
+    <table width="125px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-20">Observaciones&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-20">:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:1000px;left:664px;width:112px;height:15px;">
+    <table width="112px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">03/08/2008</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:1000px;left:600px;width:64px;height:15px;">
+    <table width="64px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-21">Vto&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-21">.&nbsp;&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-21">CAE&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-21">:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:1000px;left:416px;width:40px;height:15px;">
+    <table width="40px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">CAE&#x200E;</span><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-0">:&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:1000px;left:456px;width:141px;height:15px;">
+    <table width="141px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-2">58309092014628</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+<div class="add5066dfd-027f-4c61-b9d4-b4abd81e4502-0" style="top:904px;left:64px;width:376px;height:40px;">
+    <table width="376px" border="0" cellpadding="0" cellspacing="0px">
+        <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-18">FACTURA&nbsp;RALIZADA&nbsp;CON&nbsp;WEB&nbsp;SERVICE&nbsp;DE&nbsp;&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr><tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" style="line-height:1.0;"><span class="fc8a2b987f-b7b5-4e16-ad5c-bdc38e040af4-18">HOMOLOGACI&#211;N&#x200E;</span></td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</div>
+
+<DIV style="position:absolute; top:833pt">
+</TR></TABLE></CENTER></Div>
+</BODY>
+</HTML>

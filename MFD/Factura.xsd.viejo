@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Factura" targetNamespace="http://tempuri.org/Factura.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/Factura.xsd" xmlns:mstns="http://tempuri.org/Factura.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="comprobanteType">
+    <xs:sequence>
+      <xs:element name="cabecera" type="cabeceraType" maxOccurs="1" minOccurs="1" />
+      <xs:element name="detalle" type="detalleType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="resumen" type="resumenType" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cabeceraType">
+    <xs:sequence>
+      <xs:element name="informacion_comprobante" maxOccurs="1" minOccurs="1" type="informacion_comprobanteType" />
+      <xs:element name="informacion_vendedor" type="informacion_vendedorType" maxOccurs="1" minOccurs="1" />
+      <xs:element name="informacion_comprador" type="informacion_compradorType" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detalleType">
+    <xs:sequence>
+      <xs:element name="linea" type="lineaType" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="informacion_comprobanteType">
+    <xs:sequence>
+      <xs:element name="tipo_de_comprobante" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="numero_de_comprobante" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="punto_de_venta" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="fecha_emision" type="xs:date" maxOccurs="1" minOccurs="1" />
+      <xs:element name="fecha_vencimiento" type="xs:date" maxOccurs="1" minOccurs="1" />
+      <xs:element name="condicion_de_pago" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="cae" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="vencimiento_cae" type="xs:date" maxOccurs="1" minOccurs="1" />
+      <xs:element name="observaciones" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="informacion_vendedorType">
+    <xs:sequence>
+      <xs:element name="razon_social" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="condicion_IVA" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="condicion_ingresos_brutos" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="numero_ingresos_brutos" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="inicio_actividades" type="xs:date" maxOccurs="1" minOccurs="1" />
+      <xs:element name="contacto" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="direccion" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="localidad" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="provincia" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="cp" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="email" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="telefono" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="cuit" type="xs:string" maxOccurs="1" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="informacion_compradorType">
+    <xs:sequence>
+      <xs:element name="razon_social" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="condicion_IVA" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="condicion_ingresos_brutos" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="numero_ingresos_brutos" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="inicio_actividades" type="xs:date" maxOccurs="1" minOccurs="1" />
+      <xs:element name="contacto" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="direccion" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="localidad" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="provincia" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="cp" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="email" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="telefono" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="codigo_documento_identificatorio" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="numero_documento_identificatorio" type="xs:string" maxOccurs="1" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="referenciasType">
+    <xs:sequence>
+      <xs:element name="codigo_de_referencia" type="xs:string" />
+      <xs:element name="dato_de_referencia" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="lineaType">
+    <xs:sequence>
+      <xs:element name="codigo_interno" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="descripcion" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="cantidad" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+      <xs:element name="unidad" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="importe_unitario" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+      <xs:element name="importe_total" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+      <xs:element name="porcentajes_descuentos" type="porcentajes_descuentosType" minOccurs="0" />
+      <xs:element name="porcentajes_impuestos" type="porcentajes_impuestosType" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="numeroLinea" type="xs:ID" />
+  </xs:complexType>
+  <xs:complexType name="resumenType">
+    <xs:sequence>
+      <xs:element name="importe_bruto" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+      <xs:element name="importe_neto" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+      <xs:element name="importes_descuentos" type="importes_descuentosType" minOccurs="0" />
+      <xs:element name="importes_impuestos" type="importes_impuestosType" minOccurs="0" />
+      <xs:element name="importe_total" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="porcentajes_descuentosType">
+    <xs:sequence>
+      <xs:element name="porcentaje_descuento" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="porcentajes_impuestosType">
+    <xs:sequence>
+      <xs:element name="codigo_impuesto" type="xs:string" />
+      <xs:element name="porcentaje_impuesto" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importes_descuentosType">
+    <xs:sequence>
+      <xs:element name="codigo_descuento" type="xs:string" maxOccurs="1" minOccurs="1" />
+      <xs:element name="importe" type="xs:decimal" maxOccurs="1" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importes_impuestosType">
+    <xs:sequence>
+      <xs:element name="codigo_impuesto" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="importe" type="xs:decimal" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="comprobante" type="comprobanteType">
+  </xs:element>
+</xs:schema>

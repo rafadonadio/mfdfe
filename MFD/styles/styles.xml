@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StylesSheetFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Styles>
+		<Style Name="FormType1">
+			<Properties>
+			<Property Name="BackgroundImage" Value="Wizbck02"/>
+			</Properties>
+		</Style>
+    <Style Name="GroupBox1">
+      <Properties>
+        <Property Name="BackColor" Value="Transparent"/>
+        <Property Name="Text" Value=""/>
+        <Property Name="Enabled" Value="true"/>
+      </Properties>
+    </Style>    
+    <Style Name="Button">
+      <Properties>
+        <Property Name="BackColor" Value="Transparent"/>
+		<Property Name="Font" Value="Verdana, 8.25pt, style=Bold"/>
+      </Properties>
+    </Style>    
+    <Style Name="Label">
+      <Properties>
+        <Property Name="BackColor" Value="Transparent"/>
+		<Property Name="Font" Value="Verdana, 8.25pt, style=Bold"/>
+      </Properties>
+    </Style>    
+    <Style Name="TextBox">
+      <Properties>
+		<Property Name="Font" Value="Microsoft Sans Serif, 8.25pt, style=Bold"/>
+        <Property Name="ForeColor" Value="Blue"/>
+      </Properties>
+    </Style>    
+		<Style Name="DataGridType1">
+			<Properties>
+				<Property Name="RowsDefaultCellStyle.BackColor" Value="White"/>
+				<Property Name="AlternatingRowsDefaultCellStyle.BackColor" Value="214,222,247"/>
+        <Property Name="Columns[0].HeaderText" Value="Color name"/>
+        <Property Name="Columns[1].HeaderText" Value="My rate"/>
+			</Properties>
+		</Style>
+		<Style Name="TabControlType1">
+			<Properties>
+				<Property Name="Enabled" Value="true"/>
+        <Property Name="TabPages[0].BackColor" Value="White"/>
+        <Property Name="TabPages[1].BackColor" Value="White"/>
+        <Property Name="TabPages[2].BackColor" Value="White"/>
+      </Properties>
+		</Style>
+		<Style Name="LabelType1">
+			<Properties>
+				<Property Name="TextAlign" Value="TopLeft"/>
+        <Property Name="BorderStyle" Value="None"/>
+        <Property Name="ForeColor" Value="72,94,158"/>
+				<Property Name="Font" Value="Microsoft Sans Serif,8.25,style=Regular"/>
+				<Property Name="Height" Value="20"/>
+				<Property Name="Enabled" Value="true"/>
+			</Properties>
+		</Style>
+    <Style Name="LabelType2">
+      <Properties>
+        <Property Name="ForeColor" Value="Red"/>
+        <Property Name="Font" Value="Microsoft Sans Serif,8.25,style=Bold"/>
+      </Properties>
+    </Style>    
+		<Style Name="TextBoxType1">
+			<Properties>
+				<Property Name="TextAlign" Value="Left"/>
+				<Property Name="BorderStyle" Value="Fixed3D"/>
+				<Property Name="Font" Value="Tahoma,10,style=Regular"/>
+				<Property Name="Height" Value="20"/>
+				<Property Name="Width" Value="200"/>
+        <Property Name="BackColor" Value="214,222,247"/>
+			</Properties>
+		</Style>
+		<Style Name="HyperLinkType1">
+			<Properties>
+				<Property Name="BorderStyle" Value="None"/>
+				<Property Name="ForeColor" Value="Blue"/>
+				<Property Name="Font" Value="Tahoma,10,style=Italic,Underline"/>
+				<Property Name="Height" Value="30"/>
+				<Property Name="Width" Value="200"/>
+				<Property Name="Enabled" Value="true"/>
+			</Properties>
+		</Style>	
+		<Style Name="ButtonType1">
+			<Properties>
+				<Property Name="TextAlign" Value="TopLeft"/>
+				<Property Name="ForeColor" Value="Black"/>		
+				<Property Name="BackColor" Value="214,222,247"/>		
+				<Property Name="Font" Value="Tahoma,8.25,style=Italic"/>
+        <Property Name="Height" Value="23"/>
+				<Property Name="Enabled" Value="true"/>
+			</Properties>
+		</Style>		
+		<Style Name="ComboBoxType1">
+			<Properties>
+				<Property Name="BackColor" Value="White"/>		
+				<Property Name="Font" Value="Tahoma,10,style=Italic"/>		
+				<Property Name="Height" Value="30"/>
+				<Property Name="Width" Value="200"/>
+				<Property Name="Enabled" Value="true"/>
+			</Properties>
+		</Style>
+		<Style Name="RadioButtonType1">
+			<Properties>
+				<Property Name="ForeColor" Value="Blue"/>	
+				<Property Name="Font" Value="Verdana,8,style=Regular"/>		
+				<Property Name="Width" Value="150"/>			
+				<Property Name="Enabled" Value="true"/>
+			</Properties>
+		</Style>
+	</Styles>
+</StylesSheetFile>

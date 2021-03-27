@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<empresa>
+  <senderName>VISET</senderName>
+  <dnOrigen>serialNumber=CUIT 33677894259,emailAddress=viset@mfdsolutions.com.ar,CN=VISET,OU=VISET,O=VISET,ST=Buenos Aires,C=AR</dnOrigen>
+  <dnDestino>CN=wsaahomo; O=afip; C=ar; serialNumber=CUIT 33693450239</dnDestino>
+  <uniqueID>2</uniqueID>
+  <cuit>33-67789425-9</cuit>
+</empresa>

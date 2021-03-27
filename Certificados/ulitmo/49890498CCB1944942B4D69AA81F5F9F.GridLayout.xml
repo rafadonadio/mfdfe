@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridEXLayoutFile LayoutType="Janus.Windows.GridEX.GridEX" LayoutVersion="1.1">
+    <RootTable>
+        <Columns Collection="true">
+            <Column0 ID="Id">
+                <Caption>Id</Caption>
+                <DataMember>Id</DataMember>
+                <FormatString />
+                <Key>Id</Key>
+                <Position>0</Position>
+                <Visible>False</Visible>
+                <Width>8</Width>
+            </Column0>
+            <Column1 ID="Descripcion">
+                <Caption>Descripcion</Caption>
+                <DataMember>Descripcion</DataMember>
+                <FormatString />
+                <Key>Descripcion</Key>
+                <Position>1</Position>
+                <Width>150</Width>
+            </Column1>
+        </Columns>
+        <GroupCondition ID="" />
+        <SortKeys Collection="true">
+            <SortKey0 ID="SortKey0">
+                <ColIndex>1</ColIndex>
+            </SortKey0>
+        </SortKeys>
+    </RootTable>
+    <RowWithErrorsFormatStyle>
+        <PredefinedStyle>RowWithErrorsFormatStyle</PredefinedStyle>
+    </RowWithErrorsFormatStyle>
+    <LinkFormatStyle>
+        <PredefinedStyle>LinkFormatStyle</PredefinedStyle>
+    </LinkFormatStyle>
+    <AlternatingRowFormatStyle>
+        <BackColor>255, 255, 192</BackColor>
+        <PredefinedStyle>AlternatingRowFormatStyle</PredefinedStyle>
+    </AlternatingRowFormatStyle>
+    <CardCaptionFormatStyle>
+        <PredefinedStyle>CardCaptionFormatStyle</PredefinedStyle>
+    </CardCaptionFormatStyle>
+    <GroupByBoxFormatStyle>
+        <PredefinedStyle>GroupByBoxFormatStyle</PredefinedStyle>
+    </GroupByBoxFormatStyle>
+    <GroupByBoxInfoFormatStyle>
+        <PredefinedStyle>GroupByBoxInfoFormatStyle</PredefinedStyle>
+    </GroupByBoxInfoFormatStyle>
+    <GroupRowFormatStyle>
+        <PredefinedStyle>GroupRowFormatStyle</PredefinedStyle>
+    </GroupRowFormatStyle>
+    <HeaderFormatStyle>
+        <PredefinedStyle>HeaderFormatStyle</PredefinedStyle>
+    </HeaderFormatStyle>
+    <PreviewRowFormatStyle>
+        <PredefinedStyle>PreviewRowFormatStyle</PredefinedStyle>
+    </PreviewRowFormatStyle>
+    <RowFormatStyle>
+        <BackColor>Info</BackColor>
+        <PredefinedStyle>RowFormatStyle</PredefinedStyle>
+    </RowFormatStyle>
+    <SelectedFormatStyle>
+        <PredefinedStyle>SelectedFormatStyle</PredefinedStyle>
+    </SelectedFormatStyle>
+    <SelectedInactiveFormatStyle>
+        <PredefinedStyle>SelectedInactiveFormatStyle</PredefinedStyle>
+    </SelectedInactiveFormatStyle>
+    <WatermarkImage />
+    <AlternatingColors>True</AlternatingColors>
+    <GridLineStyle>Solid</GridLineStyle>
+    <ControlStyle />
+    <VisualStyle>Office2003</VisualStyle>
+    <IncrementalSearchMode>AllCharacters</IncrementalSearchMode>
+    <AllowEdit>False</AllowEdit>
+    <GroupByBoxVisible>False</GroupByBoxVisible>
+    <RowHeaders>True</RowHeaders>
+    <TabKeyBehavior>ControlNavigation</TabKeyBehavior>
+</GridEXLayoutFile>

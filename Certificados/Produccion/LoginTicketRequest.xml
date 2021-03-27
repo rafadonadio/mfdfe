@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loginTicketRequest version="1.0">
+  <header>
+    <source>C=AR,ST=Buenos Aires,L=Capital Federal,O=Rafael Donadio,OU=MFD SOLUTIONS,serialNumber=CUIT 20288636770,CN=Rafael Donadio,emailAddress=rafadonadio@gmail.com</source>
+    <destination>serialNumber=CUIT 33693450239, CN=wsaa, O=afip, C=ar</destination>
+    <uniqueId>4325399</uniqueId>
+    <generationTime>2001-12-31T12:00:00-03:00</generationTime>
+    <expirationTime>2001-12-31T12:10:00-03:00</expirationTime>
+  </header>
+  <service>wsfe</service>
+</loginTicketRequest>

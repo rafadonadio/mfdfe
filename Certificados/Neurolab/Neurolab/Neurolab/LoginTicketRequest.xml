@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loginTicketRequest version="1.0">
+  <header>
+    <source>serialNumber=CUIT 20174855669,emailAddress=omar.hadac@neurolab.net,CN=Neurolab,OU=Neurolab,O=Neurolab,ST=Buenos Aires,C=AR</source>
+    <destination>serialNumber=CUIT 33693450239, CN=wsaahomo, O=afip, C=ar</destination>
+    <uniqueId>4325399</uniqueId>
+    <generationTime>2007-12-31T12:00:00-03:00</generationTime>
+    <expirationTime>2007-12-31T12:10:00-03:00</expirationTime>
+  </header>
+  <service>wsfe</service>
+</loginTicketRequest>

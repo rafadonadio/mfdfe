@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="styles" targetNamespace="http://tempuri.org/styles.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/styles.xsd" xmlns:mstns="http://tempuri.org/styles.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Styles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Style">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Properties">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Property">
+                      <xs:complexType>
+                        <xs:sequence>
+                        </xs:sequence>
+                        <xs:attribute name="Name" type="xs:string" />
+                        <xs:attribute name="Value" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Name" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

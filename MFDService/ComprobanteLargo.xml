@@ -1,0 +1,72 @@
+﻿<!--
+private TiposComprobantesList supertipo;
+        private TiposComprobantes tipo;
+        private String nrocbante;
+        private DateTime emision;
+        private Clientes cliente;
+        private Empresas empresa;
+        private TiposPago tipoPago;
+        private Boolean verReporte;
+
+        private String nombreCliente;
+        private String cuitCliente;
+        private TiposContribuyentes tipoCliente;
+        private String estado;
+
+        private String observaciones;
+        private Double percepciones;
+        private Double descuento;
+        private Double subtotalneto;
+        private Double subtotalaimp;
+        private Double iva1;
+        private Double iva2;
+        private Double subtotal;
+        private Double total;
+        
+        private Usuarios  userUpd;
+        private IList<DetallesComprobantes> items;
+		  Productos producto;
+		  Int32 cantidad = 1;
+		  Double impunitario;
+		  Double imptotal;
+		  Double impunitariosistema;
+		  Ivas tipoiva;
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<comprobante>
+  <supertipo></supertipo>
+  <tipo></tipo>
+  <numeroComprobante></numeroComprobante>
+  <emision></emision>
+  <cliente></cliente>
+  <empresa></empresa>
+  <tipoPago></tipoPago>
+  <nombreCliente></nombreCliente>
+  <cuitCliente></cuitCliente>
+  <tipoCliente></tipoCliente>
+  <observaciones></observaciones>
+  <percepciones></percepciones>
+  <descuento></descuento>
+  <subtotalNeto></subtotalNeto>
+  <subtotalAImp></subtotalAImp>
+  <iva1></iva1>
+  <iva2></iva2>
+  <subtotal></subtotal>
+  <total></total>
+  <items>
+	<item>
+	  <producto></producto>
+	  <cantidad></cantidad>
+	  <impUnitario></impUnitario>
+	  <impTotal></impTotal>
+	  <impUnitarioSistema></impUnitarioSistema>
+	</item>
+	<item>
+	  <producto></producto>
+	  <cantidad></cantidad>
+	  <impUnitario></impUnitario>
+	  <impTotal></impTotal>
+	  <impUnitarioSistema></impUnitarioSistema>
+	</item>
+  </items>  
+</comprobante>

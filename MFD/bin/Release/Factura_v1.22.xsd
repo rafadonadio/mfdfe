@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.cace.org.ar/facturaelectronica/" targetNamespace="http://www.cace.org.ar/facturaelectronica/" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="comprobante">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tns:cabecera"/>
+				<xs:choice minOccurs="0">
+					<xs:element ref="tns:detalle" minOccurs="0"/>
+					<xs:element name="detalle_encriptado" type="xs:string" minOccurs="0"/>
+				</xs:choice>
+				<xs:element ref="tns:resumen"/>
+				<xs:element ref="tns:extensiones" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cabecera">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tns:informacion_comprobante"/>
+				<xs:element ref="tns:informacion_vendedor"/>
+				<xs:element ref="tns:informacion_comprador"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="informacion_comprobante">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="tipo_de_comprobante" type="xs:int"/>
+				<xs:element name="numero_comprobante">
+					<xs:simpleType>
+						<xs:restriction base="xs:long">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="99999999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="punto_de_venta">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="1"/>
+							<xs:maxInclusive value="9998"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="fecha_emision" type="xs:string"/>
+				<xs:element name="fecha_vencimiento" type="xs:string"/>
+				<xs:element name="fecha_serv_desde" type="xs:string" minOccurs="0"/>
+				<xs:element name="fecha_serv_hasta" type="xs:string" minOccurs="0"/>
+				<xs:element name="condicion_de_pago" type="xs:int" minOccurs="0"/>
+				<xs:element name="iva_computable" type="xs:string" minOccurs="0"/>
+				<xs:element name="codigo_operacion" type="xs:string" minOccurs="0"/>
+				<xs:element name="cae" type="xs:string" minOccurs="0"/>
+				<xs:element name="fecha_vencimiento_cae" type="xs:string" minOccurs="0"/>
+				<xs:element name="fecha_obtencion_cae" type="xs:string" minOccurs="0"/>
+				<xs:element name="resultado" type="xs:string" minOccurs="0"/>
+				<xs:element name="motivo" type="xs:string" minOccurs="0"/>
+				<xs:element name="es_detalle_encriptado" type="xs:string" minOccurs="0"/>
+				<xs:element name="referencias" minOccurs="0" maxOccurs="10">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="codigo_de_referencia" type="xs:int"/>
+							<xs:element name="dato_de_referencia" type="xs:long"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="informacion_vendedor">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="GLN" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:long">
+							<xs:minInclusive value="0"/>
+							<xs:maxInclusive value="9999999999999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="codigo_interno" type="xs:string" minOccurs="0"/>
+				<xs:element name="razon_social" type="xs:string" minOccurs="0"/>
+				<xs:element name="cuit" type="xs:long"/>
+				<xs:element name="condicion_IVA" type="xs:int" minOccurs="0"/>
+				<xs:element name="condicion_ingresos_brutos" type="xs:int" minOccurs="0"/>
+				<xs:element name="nro_ingresos_brutos" type="xs:string" minOccurs="0"/>
+				<xs:element name="inicio_de_actividades" type="xs:string" minOccurs="0"/>
+				<xs:element name="contacto" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_calle" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_numero" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_piso" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_depto" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_sector" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_torre" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_manzana" type="xs:string" minOccurs="0"/>
+				<xs:element name="localidad" type="xs:string" minOccurs="0"/>
+				<xs:element name="provincia" type="xs:string" minOccurs="0"/>
+				<xs:element name="cp" type="xs:string" minOccurs="0"/>
+				<xs:element name="email" type="xs:string" minOccurs="0"/>
+				<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="informacion_comprador">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="GLN" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:long">
+							<xs:minInclusive value="0"/>
+							<xs:maxInclusive value="9999999999999"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="codigo_interno" type="xs:string" minOccurs="0"/>
+				<xs:element name="codigo_doc_identificatorio" type="xs:int"/>
+				<xs:element name="nro_doc_identificatorio" type="xs:long"/>
+				<xs:element name="denominacion" type="xs:string" minOccurs="0"/>
+				<xs:element name="condicion_IVA" type="xs:int" minOccurs="0"/>
+				<xs:element name="condicion_ingresos_brutos" type="xs:int" minOccurs="0"/>
+				<xs:element name="nro_ingresos_brutos" type="xs:string" minOccurs="0"/>
+				<xs:element name="inicio_de_actividades" type="xs:string" minOccurs="0"/>
+				<xs:element name="contacto" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_calle" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_numero" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_piso" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_depto" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_sector" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_torre" type="xs:string" minOccurs="0"/>
+				<xs:element name="domicilio_manzana" type="xs:string" minOccurs="0"/>
+				<xs:element name="localidad" type="xs:string" minOccurs="0"/>
+				<xs:element name="provincia" type="xs:string" minOccurs="0"/>
+				<xs:element name="cp" type="xs:string" minOccurs="0"/>
+				<xs:element name="email" type="xs:string" minOccurs="0"/>
+				<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="detalle">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tns:linea" maxOccurs="1000"/>
+				<xs:element name="comentarios" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="linea">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="GTIN" type="xs:long" minOccurs="0"/>
+				<xs:element name="codigo_producto_vendedor" type="xs:string" minOccurs="0"/>
+				<xs:element name="codigo_producto_comprador" type="xs:string" minOccurs="0"/>
+				<xs:element name="descripcion" type="xs:string"/>
+				<xs:element name="cantidad" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999.99999"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="unidad" type="xs:string" minOccurs="0"/>
+				<xs:element name="precio_unitario" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.999"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="importe_total_articulo">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="alicuota_iva" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="99.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="importe_iva" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="indicacion_exento_gravado" type="xs:string" minOccurs="0"/>
+				<xs:element name="descuentos" minOccurs="0" maxOccurs="50">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="descripcion_descuento" type="xs:string"/>
+							<xs:element name="porcentaje_descuento" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="99.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_descuento">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_descuento_moneda_origen" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="importe_total_descuentos" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="impuestos" minOccurs="0" maxOccurs="50">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="codigo_impuesto" type="xs:int"/>
+							<xs:element name="descripcion_impuesto" type="xs:string" minOccurs="0"/>
+							<xs:element name="porcentaje_impuesto" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="99.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_impuesto">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_impuesto_moneda_origen" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="importe_total_impuestos" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="importes_moneda_origen" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="precio_unitario" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.999"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_total_articulo" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_iva" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_total_descuentos" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_total_impuestos" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="numeroLinea" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:maxInclusive value="1000"/>
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="resumen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="descuentos" minOccurs="0" maxOccurs="100">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="descripcion_descuento" type="xs:string"/>
+							<xs:element name="porcentaje_descuento" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="99.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_descuento">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_descuento_moneda_origen" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="alicuota_iva_descuento" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="99.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_iva_descuento" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_iva_descuento_moneda_origen" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="importe_total_neto_gravado">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="importe_total_concepto_no_gravado">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="importe_operaciones_exentas">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="impuesto_liq">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="impuesto_liq_rni">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="impuestos" minOccurs="0" maxOccurs="100">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="codigo_impuesto" type="xs:int"/>
+							<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+							<xs:element name="codigo_jurisdiccion" type="xs:int" minOccurs="0"/>
+							<xs:element name="jurisdiccion_municipal" type="xs:string" minOccurs="0"/>
+							<xs:element name="porcentaje_impuesto" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="99.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_impuesto">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_impuesto_moneda_origen" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="importe_total_impuestos_nacionales" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="importe_total_ingresos_brutos" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="importe_total_impuestos_municipales" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="importe_total_impuestos_internos" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="importe_total_factura">
+					<xs:simpleType>
+						<xs:restriction base="xs:double">
+							<xs:maxInclusive value="9999999999999.99"/>
+							<xs:minInclusive value="0"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="tipo_de_cambio" type="xs:double"/>
+				<xs:element name="codigo_moneda" type="xs:string"/>
+				<xs:element name="observaciones" type="xs:string" minOccurs="0"/>
+				<xs:element name="cant_alicuotas_iva" type="xs:int" minOccurs="0"/>
+				<xs:element name="importes_moneda_origen" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="importe_total_neto_gravado">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_total_concepto_no_gravado">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_operaciones_exentas">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="impuesto_liq">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="impuesto_liq_rni">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_total_impuestos_nacionales" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_total_ingresos_brutos" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_total_impuestos_municipales" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_total_impuestos_internos" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="importe_total_factura">
+								<xs:simpleType>
+									<xs:restriction base="xs:double">
+										<xs:maxInclusive value="9999999999999.99"/>
+										<xs:minInclusive value="0"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="extensiones">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="extensiones_camara_facturas" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="clave_de_vinculacion" type="xs:string" minOccurs="0"/>
+							<xs:element name="id_template" type="xs:string" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="extensiones_datos_comerciales" minOccurs="0"/>
+				<xs:element name="extensiones_datos_marketing" type="xs:string" minOccurs="0"/>
+				<xs:element name="extensiones_signatures" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

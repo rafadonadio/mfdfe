@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Entities.Settings, Entities" table="frw_settings">
+		<id name="Name" type="String" unsaved-value="">
+			<column name="name" not-null="true" unique="true" />
+			<generator class="assigned" />
+		</id>
+		<property name="Value" column="Value" type="BinaryBlob"/>
+	</class>
+</hibernate-mapping>

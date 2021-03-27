@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Entities.LoginTickets, Entities" table="strg_logintickets">
+    <id name="Id" type="Int32" unsaved-value="0">
+      <column name="id" not-null="true" unique="true" />
+      <generator class="native" />
+    </id>
+    <many-to-one name="LoginTicketRequest" class="Entities.LoginTicketRequests, Entities" column="id_loginticketrequest" access="nosetter.camelcase"/>
+    <property name="IdLoginTicket" column="id_loginticket" type="Int64" access="nosetter.camelcase"/>
+    <property name="GenerationTime" column="generationTime" type="DateTime" access="nosetter.camelcase"/>
+    <property name="ExpirationTime" column="expirationTime" type="DateTime" access="nosetter.camelcase"/>
+    <property name="Token" column="token" type="String"  access="nosetter.camelcase"/>
+    <property name="Sign" column="sign" type="String"  access="nosetter.camelcase"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Entities.ComprobantesCompras, Entities" table="strg_comprobantescompras">
+    <id name="Id" type="Int32" unsaved-value="0">
+      <column name="id_comprobantecompra" not-null="true" unique="true" />
+      <generator class="native" />
+    </id>
+
+    <bag name="Items" table="strg_detallescomprobantescompras" cascade="all-delete-orphan" inverse="true" lazy="false" access="nosetter.camelcase">
+      <key column="id_comprobantecompra"/>
+      <one-to-many class="Entities.DetallesComprobantesCompras, Entities" />
+    </bag>
+
+    <property name="Supertipo" column="Supertipo" type="Int32"/>
+    <many-to-one name="Tipo" class="Entities.TiposComprobantes, Entities" lazy="false">
+      <column name="id_tipocbante" sql-type="Int32" not-null="false"/>
+    </many-to-one>
+    <many-to-one name="Empresa" class="Entities.Empresas, Entities" lazy="false">
+      <column name="id_empresa" sql-type="Int32" not-null="false"/>
+    </many-to-one>
+    <property name="CantidadHojas" column="CantidadHojas" type="Int32"/>
+    <property name="Emision" column="Emision" type="DateTime"/>
+    <property name="Numero" column="Numero" type="String"/>
+    <property name="Estado" column="Estado" type="String" access="nosetter.camelcase"/>
+    <property name="Anulacion" column="Anulacion" type="DateTime" not-null="false" access="nosetter.camelcase"/>
+    <property name="Observaciones" column="Observaciones" type="StringClob"/>
+
+    <property name="NombreProveedor" column="NombreProveedor" type="String"/>
+    <property name="CUITProveedor" column="CUITProveedor" type="String"/>
+    <many-to-one name="TipoProveedor" class="Entities.TiposContribuyentes, Entities" lazy="false">
+      <column name="id_tipocontrib" sql-type="Int32" not-null="false"/>
+    </many-to-one>
+    <property name="CAIProveedor" column="CAIProveedor" type="String"/>
+    <property name="FechaVencimientoCAIProveedor" column="FechaVencimientoCAIProveedor" type="DateTime"/>
+
+    <property name="Importacion" column="Importacion" type="Boolean"/>
+    <many-to-one name="Aduana" class="Entities.Aduanas, Entities" lazy="false">
+      <column name="id_aduana" not-null="false"/>
+    </many-to-one>
+    <many-to-one name="Destinacion" class="Entities.Destinaciones, Entities" lazy="false">
+      <column name="id_destinacion" not-null="false"/>
+    </many-to-one>
+    <property name="NumeroDespacho" column="NumeroDespacho" type="String" not-null="false"/>
+    <property name="DigitoVerificadorNumeroDespacho" column="DigitoVerificadorNumeroDespacho" type="Char" length="1"  not-null="false"/>
+    <property name="FechaDespacho" column="FechaDespacho" type="DateTime" not-null="false"/>
+
+    <property name="Total" column="Total" type="Double" access="nosetter.camelcase"/>
+    <property name="TotalNoGravado" column="TotalNoGravado" type="Double" access="nosetter.camelcase"/>
+    <property name="NetoGravado" column="NetoGravado" type="Double" access="nosetter.camelcase"/>
+    <property name="ImpuestoLiquidado" column="ImpuestoLiquidado" type="Double" access="nosetter.camelcase"/>
+    <property name="ImporteOperacionesExentas" column="ImporteOperacionesExentas" type="Double" access="nosetter.camelcase"/>
+    <property name="Percepciones" column="Percepciones" type="Double"/>
+    <property name="PercepcionesIngresosBrutos" column="PercepcionesIngresosBrutos" type="Double"/>
+    <property name="PercepcionesMunicipales" column="PercepcionesMunicipales" type="Double"/>
+    <property name="ImpuestosInternos" column="ImpuestosInternos" type="Double"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,116 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B46D440C-81B8-4308-BBD7-C0166D41DF58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogic</RootNamespace>
+    <AssemblyName>BusinessLogic</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NHibernate, Version=1.2.0.2002, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Nhibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Tools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AduanasBL.cs" />
+    <Compile Include="ClasesBL.cs" />
+    <Compile Include="ClientesBL.cs" />
+    <Compile Include="ComprobantesComprasBL.cs" />
+    <Compile Include="ComprobantesBL.cs" />
+    <Compile Include="RepeticionesBL.cs" />
+    <Compile Include="DestinacionesBL.cs" />
+    <Compile Include="DetallesComprobantesBL.cs" />
+    <Compile Include="DetallesComprobantesComprasBL.cs" />
+    <Compile Include="EmpresasBL.cs" />
+    <Compile Include="GeneralSettingsBL.cs" />
+    <Compile Include="IvasBL.cs" />
+    <Compile Include="LibroIVAComprasBL.cs" />
+    <Compile Include="LicensesBL.cs" />
+    <Compile Include="LoginTicketRequestsBL.cs" />
+    <Compile Include="LoginTicketsBL.cs" />
+    <Compile Include="PaisesBL.cs" />
+    <Compile Include="ProductosBL.cs" />
+    <Compile Include="ProductosParaClienteBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProvinciasBL.cs" />
+    <Compile Include="RubrosBL.cs" />
+    <Compile Include="SecurityModules.cs" />
+    <Compile Include="SettingsBL.cs" />
+    <Compile Include="TiposComprobantesBL.cs" />
+    <Compile Include="TiposContribuyentesBL.cs" />
+    <Compile Include="TiposPagoBL.cs" />
+    <Compile Include="UsersGroupsBL.cs" />
+    <Compile Include="UsuariosBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CRUDModel\CRUDModel.csproj">
+      <Project>{66B0A9E4-14A0-4619-9F69-B77E9F8B41BA}</Project>
+      <Name>CRUDModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataBusinessModel\DataBusinessModel.csproj">
+      <Project>{6AC830C6-09AE-4C7C-83EF-0FDA80E6AC9B}</Project>
+      <Name>DataBusinessModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{20E03F39-E079-4EF9-9F8B-BA3799C0A68F}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsFormsControls\WindowsFormsControls.csproj">
+      <Project>{94990CD2-C08F-484D-B8DB-8279F2909A56}</Project>
+      <Name>WindowsFormsControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

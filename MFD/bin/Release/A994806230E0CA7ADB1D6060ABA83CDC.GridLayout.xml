@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridEXLayoutFile LayoutType="Janus.Windows.GridEX.GridEX" LayoutVersion="1.1">
+    <RootTable>
+        <Columns Collection="true">
+            <Column0 ID="Id">
+                <Caption>Id</Caption>
+                <DataMember>Id</DataMember>
+                <Key>Id</Key>
+                <Position>0</Position>
+                <Visible>False</Visible>
+                <Width>8</Width>
+            </Column0>
+            <Column1 ID="Emision">
+                <Caption>Emisión</Caption>
+                <DataMember>Emision</DataMember>
+                <FormatString>dd/MM/yyyy</FormatString>
+                <Key>Emision</Key>
+                <Position>1</Position>
+            </Column1>
+            <Column2 ID="SupertipoGrilla">
+                <Caption>Comprobante</Caption>
+                <DataMember>SupertipoGrilla</DataMember>
+                <Key>SupertipoGrilla</Key>
+                <Position>2</Position>
+            </Column2>
+            <Column3 ID="Letra">
+                <Caption>Letra</Caption>
+                <DataMember>Letra</DataMember>
+                <Key>Letra</Key>
+                <Position>3</Position>
+                <Width>40</Width>
+            </Column3>
+            <Column4 ID="NroCbante">
+                <Caption>Número</Caption>
+                <DataMember>NroCbante</DataMember>
+                <Key>NroCbante</Key>
+                <Position>4</Position>
+                <Width>150</Width>
+            </Column4>
+            <Column5 ID="NombreCliente">
+                <Caption>Cliente</Caption>
+                <DataMember>NombreCliente</DataMember>
+                <Key>NombreCliente</Key>
+                <Position>5</Position>
+                <Width>150</Width>
+            </Column5>
+            <Column6 ID="CUITCliente">
+                <Caption>CUIT</Caption>
+                <DataMember>CUITCliente</DataMember>
+                <Key>CUITCliente</Key>
+                <Position>6</Position>
+                <Width>150</Width>
+            </Column6>
+            <Column7 ID="EstadoGrilla">
+                <Caption>Estado</Caption>
+                <DataMember>EstadoGrilla</DataMember>
+                <Key>EstadoGrilla</Key>
+                <Position>7</Position>
+            </Column7>
+            <Column8 ID="CAE">
+                <Caption>CAE</Caption>
+                <DataMember>CAE</DataMember>
+                <Key>CAE</Key>
+                <Position>8</Position>
+            </Column8>
+        </Columns>
+        <GroupCondition ID="" />
+    </RootTable>
+    <RowWithErrorsFormatStyle>
+        <PredefinedStyle>RowWithErrorsFormatStyle</PredefinedStyle>
+    </RowWithErrorsFormatStyle>
+    <LinkFormatStyle>
+        <PredefinedStyle>LinkFormatStyle</PredefinedStyle>
+    </LinkFormatStyle>
+    <AlternatingRowFormatStyle>
+        <BackColor>255, 255, 192</BackColor>
+        <PredefinedStyle>AlternatingRowFormatStyle</PredefinedStyle>
+    </AlternatingRowFormatStyle>
+    <CardCaptionFormatStyle>
+        <PredefinedStyle>CardCaptionFormatStyle</PredefinedStyle>
+    </CardCaptionFormatStyle>
+    <GroupByBoxFormatStyle>
+        <PredefinedStyle>GroupByBoxFormatStyle</PredefinedStyle>
+    </GroupByBoxFormatStyle>
+    <GroupByBoxInfoFormatStyle>
+        <PredefinedStyle>GroupByBoxInfoFormatStyle</PredefinedStyle>
+    </GroupByBoxInfoFormatStyle>
+    <GroupRowFormatStyle>
+        <PredefinedStyle>GroupRowFormatStyle</PredefinedStyle>
+    </GroupRowFormatStyle>
+    <HeaderFormatStyle>
+        <PredefinedStyle>HeaderFormatStyle</PredefinedStyle>
+    </HeaderFormatStyle>
+    <PreviewRowFormatStyle>
+        <PredefinedStyle>PreviewRowFormatStyle</PredefinedStyle>
+    </PreviewRowFormatStyle>
+    <RowFormatStyle>
+        <BackColor>Info</BackColor>
+        <PredefinedStyle>RowFormatStyle</PredefinedStyle>
+    </RowFormatStyle>
+    <SelectedFormatStyle>
+        <PredefinedStyle>SelectedFormatStyle</PredefinedStyle>
+    </SelectedFormatStyle>
+    <SelectedInactiveFormatStyle>
+        <PredefinedStyle>SelectedInactiveFormatStyle</PredefinedStyle>
+    </SelectedInactiveFormatStyle>
+    <WatermarkImage />
+    <AlternatingColors>True</AlternatingColors>
+    <GridLineStyle>Solid</GridLineStyle>
+    <ControlStyle />
+    <VisualStyle>Office2003</VisualStyle>
+    <IncrementalSearchMode>AllCharacters</IncrementalSearchMode>
+    <AllowEdit>False</AllowEdit>
+    <GroupByBoxVisible>False</GroupByBoxVisible>
+    <RowHeaders>True</RowHeaders>
+    <TabKeyBehavior>ControlNavigation</TabKeyBehavior>
+</GridEXLayoutFile>

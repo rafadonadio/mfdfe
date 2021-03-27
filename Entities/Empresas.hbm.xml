@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Entities.Empresas, Entities" table="strg_tempresa">
+	<id name="Id" type="Int32" unsaved-value="0">
+	  <column name="id_empresa" not-null="true" unique="true" />
+	  <generator class="native" />
+	</id>
+	<property name="RazonSocial" column="RazonSocial" type="String"/>
+	<property name="Direccion" column="Direccion" type="String"/>
+	<property name="CodigoPostal" column="CodPostal" type="String"/>
+	<property name="Cuit" column="Cuit" type="String"/>
+	<property name="Inicio" column="Inicio" type="DateTime"/>
+	<property name="Email" column="Email" type="String"/>
+	<property name="IIBB" column="iibb" type="Boolean"/>
+	<property name="NroIIBB" column="NroIIBB" type="String"/>
+	<property name="Telefono" column="Telefono" type="String"/>
+	<property name="SitioWeb" column="SitioWeb" type="String"/>
+	<property name="VerReporte" column="VerReporte" type="Boolean"/>
+	<property name="Percepciones" column="Percepciones" type="Boolean"/>
+	<property name="MontoMinimoPerc" column="MontoMinimoPerc" type="Double"/>
+	<property name="PorcentajePerc" column="PorcentajePerc" type="Double"/>
+	<many-to-one name="TipoContribuyente" class="Entities.TiposContribuyentes, Entities" lazy="false">
+	  <column name="id_tipocontrib" sql-type="Int32" not-null="true"/>
+	</many-to-one>
+	<many-to-one name="Iva1" class="Entities.Ivas, Entities" lazy="false">
+	  <column name="id_iva1" sql-type="Int32" not-null="true"/>
+	</many-to-one>
+	<many-to-one name="Iva2" class="Entities.Ivas, Entities" lazy="false">
+	  <column name="id_iva2" sql-type="Int32" not-null="true"/>
+	</many-to-one>
+	<many-to-one name="UserUpd" class="Entities.Usuarios, Entities" lazy="false">
+	  <column name="user_upd" sql-type="Int32" not-null="true"/>
+	</many-to-one>
+	<property name="CAI" column="cai" type="String"/>
+	<property name="FechaVtoCAI" column="fechavtocai" type="DateTime"/>
+	<property name="LogoEmpresaFileName" column="LogoEmpresaFile" type="String"/>
+	<property name="LogoEmpresa" column="LogoEmpresa" type="BinaryBlob"/>
+	<property name="LoginTicketFileName" column="LoginTicketFile" type="String"/>
+	<property name="LoginTicket" column="LoginTicket" type="BinaryBlob"/>
+	<property name="CertificadoFileName" column="certificadoFile" type="String"/>
+	<property name="Certificado" column="certificado" type="BinaryBlob"/>
+	<property name="CertificadoPassword" column="certificadoPassword" type="String"/>
+	<property name="CertificadoDestinoFileName" column="certificadoDestinoFile" type="String"/>
+	<property name="CertificadoDestino" column="certificadoDestino" type="BinaryBlob"/>
+	<property name="DNOrigen" column="dnOrigen" type="String"/>
+	<property name="DNDestino" column="dnDestino" type="String"/>
+	<property name="UltimaFacturaA" column="ultimaFacturaA" type="String"/>
+	<property name="UltimaFacturaB" column="ultimaFacturaB" type="String"/>
+	<property name="UltimaFacturaC" column="ultimaFacturaC" type="String"/>
+	<property name="UltimaFacturaE" column="ultimaFacturaE" type="String"/>
+	<property name="UltimaNotaCreditoA" column="ultimaNotaCreditoA" type="String"/>
+	<property name="UltimaNotaCreditoB" column="ultimaNotaCreditoB" type="String"/>
+	<property name="UltimaNotaCreditoC" column="ultimaNotaCreditoC" type="String"/>
+	<property name="UltimaNotaCreditoE" column="ultimaNotaCreditoE" type="String"/>
+	<property name="UltimaNotaDebitoA" column="ultimaNotaDebitoA" type="String"/>
+	<property name="UltimaNotaDebitoB" column="ultimaNotaDebitoB" type="String"/>
+	<property name="UltimaNotaDebitoC" column="ultimaNotaDebitoC" type="String"/>
+	<property name="UltimaNotaDebitoE" column="ultimaNotaDebitoE" type="String"/>
+	<property name="SenderName" column="SenderName" type="String"/>
+	<property name="PuntoDeVenta" column="PtoVta" type="Int32"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Entities.Clientes, Entities" table="strg_tcliente">
+	<id name="Id" type="Int32" unsaved-value="0">
+	  <column name="id_cliente" not-null="true" unique="true" />
+	  <generator class="native" />
+	</id>
+	<!--<property name="Cliente" column="cliente" type="String(50)"/>-->
+	<property name="Nombre" column="nombre" type="String(50)"/>
+	<property name="CUIT" column="cuit" type="String(50)"/>
+	<property name="Email" column="email" type="String(50)"/>
+	<many-to-one name="UserUpd" class="Entities.Usuarios, Entities" lazy="false">
+	  <column name="user_upd" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<many-to-one name="Clase" class="Entities.Clases, Entities" lazy="false">
+	  <column name="id_clase" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<many-to-one name="TipoContribuyente" class="Entities.TiposContribuyentes, Entities" lazy="false">
+	  <column name="id_tipocontrib" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<many-to-one name="TipoPago" class="Entities.TiposPago, Entities" lazy="false">
+	  <column name="id_tipopago" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<property name="FiltraClase" column="FiltraClase" type="Boolean"/>
+	<property name="IibbExento" column="IibbExento" type="Boolean"/>
+	<many-to-one name="Provincia" class="Entities.Provincias, Entities" lazy="false">
+	  <column name="id_provincia" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<many-to-one name="Pais" class="Entities.Paises, Entities" lazy="false">
+	  <column name="id_pais" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+	<property name="Domicilio" column="Domicilio" type="String(50)"/>
+	<property name="Localidad" column="Localidad" type="String(50)"/>
+	<property name="Telefonos" column="Telefonos" type="String(50)"/>
+	<property name="CodigoPostal" column="codigopostal" type="String(50)"/>
+	<property name="EnDolares" column="EnDolares" type="Boolean"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="Factura_v1.22.xsl"?>
+<comprobante xmlns="" xmlns:tns="http://www.cace.org.ar/facturaelectronica/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cabecera>
+    <informacion_comprobante>
+      <tipo_de_comprobante>01</tipo_de_comprobante>
+      <numero_comprobante>00000228</numero_comprobante>
+      <punto_de_venta>0001</punto_de_venta>
+      <fecha_emision>2009-03-04</fecha_emision>
+      <iva_computable>S</iva_computable>
+      <codigo_operacion>codigo_operacion1</codigo_operacion>
+      <cae>El cliente encontró el tipo de contenido de respuesta 'text/html; charset=utf-8', pero se esperaba 'text/xml'.
+Error de la solicitud con el mensaje de error:
+--
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Configuration Error&lt;/title&gt;
+        &lt;style&gt;
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        &lt;/style&gt;
+    &lt;/head&gt;
+
+    &lt;body bgcolor="white"&gt;
+
+            &lt;span&gt;&lt;H1&gt;Server Error in '/' Application.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;
+
+            &lt;h2&gt; &lt;i&gt;Configuration Error&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;
+
+            &lt;font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif "&gt;
+
+            &lt;b&gt; Description: &lt;/b&gt;An error occurred during the processing of a configuration file required to service this request. Please review the specific error details below and modify your configuration file appropriately.
+            &lt;br&gt;&lt;br&gt;
+
+            &lt;b&gt; Parser Error Message: &lt;/b&gt;Could not load file or assembly 'System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified.&lt;br&gt;&lt;br&gt;
+
+            &lt;b&gt;Source Error:&lt;/b&gt; &lt;br&gt;&lt;br&gt;
+
+            &lt;table width=100% bgcolor="#ffffcc"&gt;
+               &lt;tr&gt;
+                  &lt;td&gt;
+                      &lt;code&gt;&lt;pre&gt;
+
+Line 128:			&lt;add verb="GET" path="CaptchaImage.aspx" type="WebControlCaptcha.CaptchaImageHandler, WebControlCaptcha"/&gt;
+Line 129:			&lt;remove verb="*" path="*.asmx"/&gt;
+&lt;font color=red&gt;Line 130:			&lt;add verb="*" path="*.asmx" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/&gt;
+&lt;/font&gt;Line 131:			&lt;add verb="*" path="*_AppService.axd" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/&gt;
+Line 132:			&lt;add verb="GET" path="ScriptResource.axd" type="Microsoft.Web.Handlers.ScriptResourceHandler" validate="false"/&gt;&lt;/pre&gt;&lt;/code&gt;
+
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;/table&gt;
+
+            &lt;br&gt;
+
+            &lt;b&gt; Source File: &lt;/b&gt; D:\inetpub\vhosts\travelpay.com.ar\httpdocs\web.config&lt;b&gt;    Line: &lt;/b&gt; 130
+            &lt;br&gt;&lt;br&gt;
+
+            &lt;b&gt;Assembly Load Trace:&lt;/b&gt; The following information can be helpful to determine why the assembly 'System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' could not be loaded.&lt;br&gt;&lt;br&gt;
+
+            &lt;table width=100% bgcolor="#ffffcc"&gt;
+               &lt;tr&gt;
+                  &lt;td&gt;
+                      &lt;code&gt;&lt;pre&gt;
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+&lt;/pre&gt;&lt;/code&gt;
+
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;/table&gt;
+
+            &lt;br&gt;
+
+            &lt;hr width=100% size=1 color=silver&gt;
+
+            &lt;b&gt;Version Information:&lt;/b&gt; Microsoft .NET Framework Version:2.0.50727.1433; ASP.NET Version:2.0.50727.1433
+
+            &lt;/font&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+&lt;!-- 
+[FileNotFoundException]: Could not load file or assembly 'System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified.
+   at System.RuntimeTypeHandle._GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark&amp; stackMark, Boolean loadTypeFromPartialName)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark&amp; stackMark)
+   at System.RuntimeType.PrivateGetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark&amp; stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Configuration.ConfigUtil.GetType(String typeName, String propertyName, ConfigurationElement configElement, XmlNode node, Boolean checkAptcaBit, Boolean ignoreCase)
+[ConfigurationErrorsException]: Could not load file or assembly 'System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified. (D:\inetpub\vhosts\travelpay.com.ar\httpdocs\web.config line 130)
+   at System.Web.Configuration.ConfigUtil.GetType(String typeName, String propertyName, ConfigurationElement configElement, XmlNode node, Boolean checkAptcaBit, Boolean ignoreCase)
+   at System.Web.Configuration.HttpHandlerAction.Create()
+   at System.Web.Configuration.HandlerFactoryCache..ctor(HttpHandlerAction mapping)
+   at System.Web.HttpApplication.GetFactory(HttpHandlerAction mapping)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)
+--&gt;&lt;!-- 
+This error page might contain sensitive information because ASP.NET is configured to show verbose error messages using &lt;customErrors mode="Off"/&gt;. Consider using &lt;customErrors mode="On"/&gt; or &lt;customErrors mode="RemoteOnly"/&gt; in production environments.--&gt;
+--.</cae>
+      <fecha_vencimiento_cae>2009-03-14</fecha_vencimiento_cae>
+      <fecha_obtencion_cae>2009-03-04</fecha_obtencion_cae>
+      <resultado>
+      </resultado>
+      <es_detalle_encriptado>N</es_detalle_encriptado>
+    </informacion_comprobante>
+    <informacion_vendedor>
+      <razon_social>MFD SOLUTIONS en HOMOLOGACION</razon_social>
+      <cuit>33677894259</cuit>
+      <condicion_IVA>01</condicion_IVA>
+      <condicion_ingresos_brutos>1</condicion_ingresos_brutos>
+      <nro_ingresos_brutos>6161616</nro_ingresos_brutos>
+      <inicio_de_actividades>2008-02-01</inicio_de_actividades>
+      <contacto>
+      </contacto>
+      <domicilio_calle>Riobamba 273 P4 "7"</domicilio_calle>
+      <domicilio_numero>
+      </domicilio_numero>
+      <domicilio_depto>
+      </domicilio_depto>
+      <domicilio_sector>
+      </domicilio_sector>
+      <domicilio_torre>
+      </domicilio_torre>
+      <domicilio_manzana>
+      </domicilio_manzana>
+      <localidad>CABA</localidad>
+      <provincia>Buenos Aires</provincia>
+      <cp>CA1024BE</cp>
+      <email>info@mfdsolutions.com.ar</email>
+      <telefono>+(5411) 4590-2266</telefono>
+    </informacion_vendedor>
+    <informacion_comprador>
+      <codigo_interno>codigo_interno1</codigo_interno>
+      <codigo_doc_identificatorio>80</codigo_doc_identificatorio>
+      <nro_doc_identificatorio>30544052027</nro_doc_identificatorio>
+      <denominacion>GATA S.A.</denominacion>
+      <condicion_IVA>01</condicion_IVA>
+      <domicilio_calle>Peron 1314</domicilio_calle>
+      <domicilio_numero>
+      </domicilio_numero>
+      <domicilio_depto>
+      </domicilio_depto>
+      <domicilio_sector>
+      </domicilio_sector>
+      <domicilio_torre>
+      </domicilio_torre>
+      <domicilio_manzana>
+      </domicilio_manzana>
+      <localidad>CABA</localidad>
+      <provincia>Buenos Aires</provincia>
+      <cp>1038</cp>
+      <email>veromassera@yahoo.com</email>
+      <telefono>43838610</telefono>
+    </informacion_comprador>
+  </cabecera>
+  <detalle>
+    <comentarios>
+    </comentarios>
+  </detalle>
+  <resumen>
+    <importe_total_neto_gravado>90.00</importe_total_neto_gravado>
+    <importe_total_concepto_no_gravado>0</importe_total_concepto_no_gravado>
+    <importe_operaciones_exentas>0</importe_operaciones_exentas>
+    <impuesto_liq>0.00</impuesto_liq>
+    <impuesto_liq_rni>0</impuesto_liq_rni>
+    <importe_total_impuestos_nacionales>0</importe_total_impuestos_nacionales>
+    <importe_total_ingresos_brutos>0</importe_total_ingresos_brutos>
+    <importe_total_impuestos_municipales>0</importe_total_impuestos_municipales>
+    <importe_total_impuestos_internos>0</importe_total_impuestos_internos>
+    <importe_total_factura>90.00</importe_total_factura>
+    <codigo_moneda>PES</codigo_moneda>
+    <cant_alicuotas_iva>1</cant_alicuotas_iva>
+    <importes_moneda_origen>
+      <importe_total_neto_gravado>0</importe_total_neto_gravado>
+      <importe_total_concepto_no_gravado>0</importe_total_concepto_no_gravado>
+      <importe_operaciones_exentas>0</importe_operaciones_exentas>
+      <impuesto_liq>0</impuesto_liq>
+      <impuesto_liq_rni>0</impuesto_liq_rni>
+      <importe_total_impuestos_nacionales>0</importe_total_impuestos_nacionales>
+      <importe_total_ingresos_brutos>0</importe_total_ingresos_brutos>
+      <importe_total_impuestos_municipales>0</importe_total_impuestos_municipales>
+      <importe_total_impuestos_internos>0</importe_total_impuestos_internos>
+      <importe_total_factura>0</importe_total_factura>
+    </importes_moneda_origen>
+  </resumen>
+  <extensiones>
+    <extensiones_camara_facturas>
+      <clave_de_vinculacion>clave_de_vinculacion1</clave_de_vinculacion>
+      <id_template>id_template1</id_template>
+    </extensiones_camara_facturas>
+    <extensiones_datos_comerciales>anyType</extensiones_datos_comerciales>
+    <extensiones_datos_marketing>extensiones_datos_marketing1<logo xmlns="">C:\Vero\Proyectos\MFD\Download\Logo3.jpg</logo><url xmlns="">http://www.mfdsolutions.com.ar</url></extensiones_datos_marketing>
+    <extensiones_signatures>extensiones_signatures1</extensiones_signatures>
+  </extensiones>
+</comprobante>

@@ -1,0 +1,13 @@
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\DataBusinessModel.dll
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\NHibernate.dll
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\Iesi.Collections.dll
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\log4net.dll
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\Castle.DynamicProxy.dll
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\NHibernate.pdb
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\NHibernate.xml
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\Iesi.Collections.pdb
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\Iesi.Collections.xml
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\log4net.xml
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\bin\Release\Castle.DynamicProxy.xml
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\obj\Release\ResolveAssemblyReference.cache
+C:\Vero\Proyectos\MFD\MFDHOMO\DataBusinessModel\obj\Release\DataBusinessModel.dll

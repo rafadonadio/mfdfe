@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Microsoft Sans Serif" Size="8.25" />
+  <Class Name="BusinessLogic.AduanasBL" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AduanasBL.cs</FileName>
+      <HashCode>ABAAAAAAgAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ModuloParametros" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ClasesBL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ClasesBL" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ClasesBL.cs</FileName>
+      <HashCode>AAAAAAAAgAIAAIAAgACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ModuloClientes" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ClientesBL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ClientesBL" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ClientesBL.cs</FileName>
+      <HashCode>ABAAAAAAgAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ModuloComprobantes" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ComprobantesBL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ComprobantesBL">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ComprobantesBL.cs</FileName>
+      <HashCode>ABCABQgIgAIAAAAAEAEANAEAAAEIAAQAAAICAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="BusinessLogic.ComprobantesBL.LibroVentasTotal">
+        <TypeIdentifier>
+          <NewMemberFileName>ComprobantesBL.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="BusinessLogic.ModuloComprobantesCompras" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ComprobantesComprasBL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ComprobantesComprasBL" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ComprobantesComprasBL.cs</FileName>
+      <HashCode>ABCABAgAgAIAAAAAAAEAFAAAgAAIAAQAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.DestinacionesBL" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DestinacionesBL.cs</FileName>
+      <HashCode>ABAAAAAAgAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.DetallesComprobantesBL" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DetallesComprobantesBL.cs</FileName>
+      <HashCode>ABAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.DetallesComprobantesComprasBL" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DetallesComprobantesComprasBL.cs</FileName>
+      <HashCode>ABAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.EmpresasBL" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EmpresasBL.cs</FileName>
+      <HashCode>ABAAAAAAgAIAAAAAgAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.GeneralSettingsBL" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GeneralSettingsBL.cs</FileName>
+      <HashCode>AAAAAAgAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.IvasBL" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IvasBL.cs</FileName>
+      <HashCode>AAAAAAAAgAIAAAAAgACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.LibroIVAComprasBL" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LibroIVAComprasBL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAQAAAAAQAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.LicensesBL" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LicensesBL.cs</FileName>
+      <HashCode>AAAAAAAABAAQAAAAIAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.LoginTicketRequestsBL" Collapsed="true">
+    <Position X="15.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LoginTicketRequestsBL.cs</FileName>
+      <HashCode>CAAAgAAgAAIAADAAAAAABAAAAAAAAAEAACAAAgAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.LoginTicketsBL" Collapsed="true">
+    <Position X="14.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LoginTicketsBL.cs</FileName>
+      <HashCode>CAAAgBAAAAIAABAIAAAAAAAABAAAAAAAACACAgAQIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.PaisesBL" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PaisesBL.cs</FileName>
+      <HashCode>AAAAAAAAgAIAAIAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ModuloProductos" Collapsed="true">
+    <Position X="15.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ProductosBL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ProductosBL" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ProductosBL.cs</FileName>
+      <HashCode>ABAAAAAAgAIAAAAAgAEAAAAAAAAAAAAAAAICAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ProductosParaClienteBL" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ProductosParaClienteBL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ProvinciasBL" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ProvinciasBL.cs</FileName>
+      <HashCode>AAAAAAAAgAIAAIAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.RubrosBL" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RubrosBL.cs</FileName>
+      <HashCode>AAAAAAAAgAIAAAAAgACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.SecurityModules" Collapsed="true">
+    <Position X="11.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SecurityModules.cs</FileName>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAFAQAAAQAAAAAASBAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.AccionEspecial" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SecurityModules.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.FuncionGeneral" Collapsed="true">
+    <Position X="11.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SecurityModules.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.FuncionReportes" Collapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SecurityModules.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.FuncionSettings" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SecurityModules.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.SettingsBL" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SettingsBL.cs</FileName>
+      <HashCode>AAAAAAgABAAQAAAAIAAAAAAAAAAABAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.TiposComprobantesBL" Collapsed="true">
+    <Position X="15.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TiposComprobantesBL.cs</FileName>
+      <HashCode>AACAAAAAgAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.TiposContribuyentesBL" Collapsed="true">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TiposContribuyentesBL.cs</FileName>
+      <HashCode>AAAAAAgAgAIAAIAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.TiposPagoBL" Collapsed="true">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TiposPagoBL.cs</FileName>
+      <HashCode>AAAAAAAAgAIAAIAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.UsersGroupsBL" Collapsed="true">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>UsersGroupsBL.cs</FileName>
+      <HashCode>AAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.ModuloUsuarios" Collapsed="true">
+    <Position X="14.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>UsuariosBL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BusinessLogic.UsuariosBL" Collapsed="true">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>UsuariosBL.cs</FileName>
+      <HashCode>AAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BusinessLogic.TipoPeriodo" Collapsed="true">
+    <Position X="6" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ComprobantesBL.cs</FileName>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

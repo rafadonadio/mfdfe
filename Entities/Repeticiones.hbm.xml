@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Entities.Repeticiones, Entities" table="strg_trepeticion">
+	<id name="Id" type="Int32" column="id_comprobante" unsaved-value="0">
+	  <generator class="assigned" />
+	</id>
+	<property name="DiaMes" column="dia_mes" type="Int32"/>
+	<property name="Hasta" column="hasta" type="DateTime"/>
+	<many-to-one name="Comprobante" class="Entities.Comprobantes, Entities" lazy="false">
+	  <column name="id_comprobante" sql-type="Int32" not-null="false"/>
+	</many-to-one>
+  </class>
+</hibernate-mapping>

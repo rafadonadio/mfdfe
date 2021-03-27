@@ -1,0 +1,558 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB8FD29B-7037-49C8-A881-DE77CE219E11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MFD</RootNamespace>
+    <AssemblyName>MFD</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignManifests>true</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>BC8CC3E5CDC64C2C4976333E5BFF8D2084E2EAEF</ManifestCertificateThumbprint>
+    <ManifestKeyFile>MFD_TemporaryKey.pfx</ManifestKeyFile>
+    <PublishUrl>ftp://ftp.mfdsolutions.com.ar/domains/mfdsolutions.com.ar/public_ftp/Releases/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.2.3600.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Shared\10.2.3600.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.ButtonBar.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\UI\WinForms\Janus.Windows.ButtonBar.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\UI\WinForms\Janus.Windows.Common.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\UI\WinForms\Janus.Windows.GridEX.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate, Version=1.2.0.2002, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Nhibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Tools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcercadeMFD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercadeMFD.Designer.cs">
+      <DependentUpon>AcercadeMFD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivationDetailSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivationDetailSplash.Designer.cs">
+      <DependentUpon>ActivationDetailSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Adapters\ComprobantesAdapter.cs" />
+    <Compile Include="Clases\Adapters\LibroIVAComprasAdapter.cs" />
+    <Compile Include="Clases\CRUDChildControllerManager.cs" />
+    <Compile Include="Clases\CRUDComprobantesComprasController.cs" />
+    <Compile Include="Clases\CRUDComprobantesController.cs" />
+    <Compile Include="Clases\CRUDUsersGroupsController.cs" />
+    <Compile Include="Clases\FieldFormatter.cs" />
+    <Compile Include="Clases\FTPSettingsController.cs" />
+    <Compile Include="Clases\GeneralSettingsController.cs" />
+    <Compile Include="Clases\LibroComprasAFIPController.cs" />
+    <Compile Include="Clases\LibroVentasAFIPController.cs" />
+    <Compile Include="Clases\SecurityManager.cs" />
+    <Compile Include="ClientesCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesCRUD.Designer.cs">
+      <DependentUpon>ClientesCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComprobantesComprasCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprobantesComprasCRUD.Designer.cs">
+      <DependentUpon>ComprobantesComprasCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComprobantesCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprobantesCRUD.Designer.cs">
+      <DependentUpon>ComprobantesCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesComprobantesComprasCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesComprobantesComprasCRUD.Designer.cs">
+      <DependentUpon>DetallesComprobantesComprasCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterSerialKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterSerialKey.Designer.cs">
+      <DependentUpon>EnterSerialKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSettingsForm.Designer.cs">
+      <DependentUpon>GeneralSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HacerBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HacerBackup.Designer.cs">
+      <DependentUpon>HacerBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IvasCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IvasCRUD.Designer.cs">
+      <DependentUpon>IvasCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesComprobantesCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesComprobantesCRUD.Designer.cs">
+      <DependentUpon>DetallesComprobantesCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpresasCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpresasCRUD.Designer.cs">
+      <DependentUpon>EmpresasCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdDescripcionCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdDescripcionCRUD.Designer.cs">
+      <DependentUpon>IdDescripcionCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MesYEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MesYEmpresa.Designer.cs">
+      <DependentUpon>MesYEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periodo.Designer.cs">
+      <DependentUpon>Periodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeriodoYTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeriodoYTipo.Designer.cs">
+      <DependentUpon>PeriodoYTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductosCRUD.Designer.cs">
+      <DependentUpon>ProductosCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AcercadeMFD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AcercadeMFD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivationDetailSplash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ActivationDetailSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClientesCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprobantesComprasCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComprobantesComprasCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprobantesCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComprobantesCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesComprobantesComprasCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetallesComprobantesComprasCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterSerialKey.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnterSerialKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GeneralSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HacerBackup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HacerBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IvasCRUD.resx">
+      <DependentUpon>IvasCRUD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesComprobantesCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetallesComprobantesCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpresasCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmpresasCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdDescripcionCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IdDescripcionCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesYEmpresa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MesYEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Periodo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Periodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeriodoYTipo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PeriodoYTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductosCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProductosCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTPSettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FTPSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TiposContribuyentesCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TiposContribuyentesCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersGroupsCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UsersGroupsCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuariosCRUD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UsuariosCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTPSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTPSettingsForm.Designer.cs">
+      <DependentUpon>FTPSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TiposContribuyentesCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TiposContribuyentesCRUD.Designer.cs">
+      <DependentUpon>TiposContribuyentesCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersGroupsCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersGroupsCRUD.Designer.cs">
+      <DependentUpon>UsersGroupsCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuariosCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuariosCRUD.Designer.cs">
+      <DependentUpon>UsuariosCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ar.gov.afip.wsaa\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ar.gov.afip.wswhomo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\localhost\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{B46D440C-81B8-4308-BBD7-C0166D41DF58}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRUDModel\CRUDModel.csproj">
+      <Project>{66B0A9E4-14A0-4619-9F69-B77E9F8B41BA}</Project>
+      <Name>CRUDModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataBusinessModel\DataBusinessModel.csproj">
+      <Project>{6AC830C6-09AE-4C7C-83EF-0FDA80E6AC9B}</Project>
+      <Name>DataBusinessModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{20E03F39-E079-4EF9-9F8B-BA3799C0A68F}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reporting\Reporting.csproj">
+      <Project>{75E2ECBB-7C48-4B24-BB7B-1370DA24F0B0}</Project>
+      <Name>Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsFormsControls\WindowsFormsControls.csproj">
+      <Project>{94990CD2-C08F-484D-B8DB-8279F2909A56}</Project>
+      <Name>WindowsFormsControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wizabt01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wizbck04.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wizabt00.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Factura.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Factura.xsx">
+      <DependentUpon>Factura.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="LoginTicketRequest.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LoginTicketRequest.xsx">
+      <DependentUpon>LoginTicketRequest.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="MFDSolutions.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="MFD_TemporaryKey.pfx" />
+    <None Include="Resources\Wizbck02.gif" />
+    <None Include="styles\styles.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="styles\styles.xsx">
+      <DependentUpon>styles.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\ar.gov.afip.wsaa\LoginCms.wsdl" />
+    <None Include="Web References\ar.gov.afip.wsaa\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ar.gov.afip.wswhomo\DummyResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ar.gov.afip.wswhomo\FEConsultaCAEResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ar.gov.afip.wswhomo\FERecuperaLastCMPResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ar.gov.afip.wswhomo\FERecuperaQTYResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ar.gov.afip.wswhomo\FEResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ar.gov.afip.wswhomo\FEUltNroResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ar.gov.afip.wswhomo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ar.gov.afip.wswhomo\service.wsdl" />
+    <None Include="Web References\localhost\LoginCms.wsdl" />
+    <None Include="Web References\localhost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/LoginCms.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://localhost/LoginCms.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MFD_localhost_LoginCMSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://wsaa.afip.gov.ar/ws/services/LoginCms%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ar.gov.afip.wsaa\</RelPath>
+      <UpdateFromURL>https://wsaa.afip.gov.ar/ws/services/LoginCms%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MFD_ar_gov_afip_wsaa_LoginCMSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://wswhomo.afip.gov.ar/wsfe/service.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ar.gov.afip.wswhomo\</RelPath>
+      <UpdateFromURL>https://wswhomo.afip.gov.ar/wsfe/service.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MFD_ar_gov_afip_wswhomo_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="styles\styles.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="styles\styles1.xml" />
+    <Content Include="styles\styles2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

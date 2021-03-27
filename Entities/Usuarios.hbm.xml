@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Entities.Usuarios, Entities" table="frw_usuarios">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="id" not-null="true" unique="true" />
+			<generator class="native" />
+		</id>
+		<property name="Nombre" column="nombre" type="String"/>
+		<property name="Password" column="password" type="String"/>
+		<many-to-one name="UserGroup" class="Security.UsersGroups, CRUDModel" lazy="false">
+			<column name="id_usergroup" sql-type="Int32" not-null="true"/>
+		</many-to-one>
+		<map table="frw_usuarios_funciones" name="Access">
+			<key column="id_usuario"/>
+			<index-many-to-many column="id_funcion" class="Entities.Funciones, Entities"/>
+			<element column="nivelacceso" type="Int32"/>
+		</map>
+	</class>
+</hibernate-mapping>

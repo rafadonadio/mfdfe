@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Entities.Clases, Entities" table="strg_tclase">
+		<id name="Id" type="Int32" unsaved-value="0">
+			<column name="id_clase" not-null="true" unique="true" />
+			<generator class="native" />
+		</id>
+		<property name="Descripcion" column="descripcion" type="String"/>
+	</class>
+</hibernate-mapping>
